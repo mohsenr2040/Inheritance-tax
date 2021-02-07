@@ -1,0 +1,407 @@
+
+.glossymenu li a:hover b{
+	border-width:2px; /*right tab image path*/
+	border-color:Red;
+	width:115px;
+}
+
+.glossymenu li a:active b{
+	border-width:2px; /*right tab image path*/
+	border-color:Red;
+	width:115px;
+}
+.glossymenu li.current a b{
+	border-width:2px; /*right tab image path*/
+	border-color:Red;
+	width:115px;
+}
+
+
+/*body {
+font-family: Tahoma, Geneva, sans-serif;
+	background-color: #ffcb05;
+	color:#252525;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+
+}*/
+.hdr-bg {
+	background-image: url(../../App_Themes/Master/M_Images/img03.png);
+	background-repeat: repeat-x;
+	padding-top: 37px;
+}
+.colume-left {
+	background-image: url(../../App_Themes/Master/M_Images/img04.png);
+	background-repeat: repeat-y;
+	width: 13px;
+}
+.colume-right {
+	background-image: url(../../App_Themes/Master/M_Images/img05.png);
+	background-repeat: repeat-y;
+	width: 13px;
+}
+.mainline-r {
+	background-image: url(../../App_Themes/Master/M_Images/img15.png);
+	background-repeat: repeat-y;
+}
+
+.mainline-b {
+	background-image: url(../../App_Themes/Master/M_Images/img17.png);
+	background-repeat: repeat-x;
+}
+
+.mainline-l {
+	background-image: url(../../App_Themes/Master/M_Images/img19.png);
+	background-repeat: repeat-y;
+}
+
+.mainline-t {
+	background-image: url(../../App_Themes/Master/M_Images/img21.png);
+	background-repeat: repeat-x;
+}
+
+.maincorner-1 {
+	background-image: url('../../App_Themes/Master/M_Images/img14.png');
+	background-repeat: no-repeat;
+	height: 9px;
+	width: 9px;
+}
+.maincorner-2 {
+	background-image: url('M_Images/img16.png');
+	background-repeat: no-repeat;
+	height: 9px;
+	width: 9px;
+	direction: ltr;
+}
+.maincorner-3 {
+	background-image: url(../../App_Themes/Master/M_Images/img18.png);
+	background-repeat: no-repeat;
+	height: 9px;
+	width: 9px;
+}
+.maincorner-4 {
+	background-image: url(../../App_Themes/Master/M_Images/img20.png);
+	background-repeat: no-repeat;
+	height: 9px;
+	width: 9px;
+}
+
+.footer {
+	background-image: url(../../App_Themes/Master/M_Images/img08.png);
+	background-repeat: repeat-x;
+}
+.title {
+	background-image: url(../../App_Themes/Master/M_Images/img13.png);
+	background-repeat:no-repeat;
+	width: 400px;
+	height: 30px;
+	padding-right:8px;
+}
+.Content{
+padding:5px;
+}
+
+/*Menu */
+
+.glossymenu{
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+	background: url(../../App_Themes/Master/M_Images/menur_bg.gif) repeat-x; /*tab background image path*/
+	height: 40px;
+	list-style: none;
+	direction:ltr;
+    top: 0px;
+    left: 0px;
+}
+
+.glossymenu li{
+	float:left;
+	height:40px;
+}
+
+.glossymenu li a{
+	float: left;
+	display: block;
+	color:#000;
+	width:115px;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	padding:0 0 0 0px; /*Padding to accomodate left tab image. Do not change*/
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.glossymenu li a b{
+	float: left;
+	display: block;
+	padding: 0px; /*Padding of menu items*/
+	width:115px;
+	height:40px;
+}
+
+
+
+
+.glossymenu li a b{
+	width:115px;
+}
+.glossymenu li a:visited b{
+	width:115px;
+}
+
+
+.menu-bg {
+	background-image: url(../../App_Themes/Master/M_Images/menu-bg.gif);
+	background-repeat: repeat-x;
+}
+.menurow-bg {
+	background-image: url(../../App_Themes/Master/M_Images/menurow-bg.png);
+	background-repeat: repeat-x;
+}
+
+.ActiveMenu{
+	background: url(../../App_Themes/Master/M_Images/menur_hover_right.gif) no-repeat right top; /*right tab image path*/
+	width:115px;
+}
+
+td   { color: #003399; font-size: 9pt; font-family: Tahoma, Arial, Helvetica, sans-serif;
+	
+}
+  .Menu_Pic td
+    {
+    	background-image:url(../../App_Themes/Master/M_Images/formhdrbg.png);
+    }
+     .Menu_Pic1
+    {
+    	background-image:url(../../App_Themes/Master/M_Images/btn-bg.png);
+    	background-position:right 0px;
+        padding-right:5px;
+    	
+    }
+    .Menu_Pic_1
+    {
+    	background-image:url(../../App_Themes/Master/M_Images/menurowrow-bg.gif);
+    	background-repeat:repeat-x;
+    	}
+    	
+    	 .Menu_Pic_2 td
+    {
+    	background-image:url(../../App_Themes/Master/M_Images/btn-bg2.png);
+    	background-position:right px;
+    	background-repeat:repeat-x;
+    	
+    	}
+.ActiveErsMenu
+{
+    
+	height: 30px;
+	vertical-align:top;
+	text-align:center;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+}
+.ActiveSalMenu
+{
+    background-image: url('../../App_Themes/Master/M_Images/btn/menur_hover_sal.png');
+	background-position:right;
+	background-repeat: no-repeat;
+	width: 115px;
+	height: 40px;
+	vertical-align:middle;
+	text-align:center;
+	font-size:15pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+}
+.DeactiveSalMenu
+{
+    background-image:url('../../App_Themes/Master/M_Images/btn/menur_bg_sal.png');
+	background-position:right;
+	background-repeat: no-repeat;
+	width: 115px;
+	height: 40px;
+	vertical-align:middle;
+	text-align:center;
+	font-size:15pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+}
+
+.ActiveAfsMenu
+{
+    background-image: url('../../App_Themes/Master/M_Images/btn/menur_hover_afs.png');
+	background-position:right;
+	background-repeat: no-repeat;
+	width: 115px;
+	height: 40px;
+	vertical-align:middle;
+	text-align:center;
+	font-size:15pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+}
+.DeactiveAfsMenu
+{
+    background-image:url('../../App_Themes/Master/M_Images/btn/menur_bg_afs.png');
+	background-position:right;
+	background-repeat: no-repeat;
+	width: 115px;
+	height: 40px;
+	vertical-align:middle;
+	text-align:center;
+	font-size:15pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+}
+.ActiveDisMenu
+{
+    background-image: url('../../App_Themes/Master/M_Images/btn/menur_hover_dis.png');
+	background-position:right;
+	background-repeat: no-repeat;
+	width: 115px;
+	height: 40px;
+	vertical-align:middle;
+	text-align:center;
+	font-size:15pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+}
+.DeactiveDisMenu
+{
+    background-image:url('../../App_Themes/Master/M_Images/btn/menur_bg_dis.png');
+	background-position:right;
+	background-repeat: no-repeat;
+	width: 115px;
+	height: 40px;
+	vertical-align:middle;
+	text-align:center;
+	font-size:15pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+}
+.ActiveBilMenu
+{
+    background-image: url('../../App_Themes/Master/M_Images/btn/menur_hover_bil.png');
+	background-position:right;
+	background-repeat: no-repeat;
+	width: 115px;
+	height: 40px;
+	vertical-align:middle;
+	text-align:center;
+	font-size:15pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+}
+.DeactiveBilMenu
+{
+    background-image:url('../../App_Themes/Master/M_Images/btn/menur_bg_bil.png');
+	background-position:right;
+	background-repeat: no-repeat;
+	width: 115px;
+	height: 40px;
+	vertical-align:middle;
+	text-align:center;
+	font-size:15pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+}
+.ActiveMtoMenu
+{
+    background-image: url('../../App_Themes/Master/M_Images/btn/menur_hover_mto.png');
+	background-position:right;
+	background-repeat: no-repeat;
+	width: 115px;
+	height: 40px;
+	vertical-align:middle;
+	text-align:center;
+	font-size:15pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+}
+.DeactiveMtoMenu
+{
+    background-image:url('../../App_Themes/Master/M_Images/btn/menur_bg_mto.png');
+	background-position:right;
+	background-repeat: no-repeat;
+	width: 115px;
+	height: 40px;
+	vertical-align:middle;
+	text-align:center;
+	font-size:15pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+}
+.ActiveRagMenu
+{
+    background-image: url('../../App_Themes/Master/M_Images/btn/menur_hover_rag.png');
+	background-position:right;
+	background-repeat: no-repeat;
+	width: 115px;
+	height: 40px;
+	vertical-align:middle;
+	text-align:center;
+	font-size:15pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+}
+.DeactiveRagMenu
+{
+    background-image:url('../../App_Themes/Master/M_Images/btn/menur_bg_rag.png');
+	background-position:right;
+	background-repeat: no-repeat;
+	width: 115px;
+	height: 40px;
+	vertical-align:middle;
+	text-align:center;
+	font-size:15pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+}
+.ActiveTamMenu
+{
+    background-image: url('../../App_Themes/Master/M_Images/btn/menur_hover_tam.png');
+	background-position:right;
+	background-repeat: no-repeat;
+	width: 115px;
+	height: 40px;
+	vertical-align:middle;
+	text-align:center;
+	font-size:15pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+}
+.DeactiveTamMenu
+{
+    background-image:url('../../App_Themes/Master/M_Images/btn/menur_bg_Tam.png');
+	background-position:right;
+	background-repeat: no-repeat;
+	width: 115px;
+	height: 40px;
+	vertical-align:middle;
+	text-align:center;
+	font-size:15pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+}

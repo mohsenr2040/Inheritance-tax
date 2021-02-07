@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 17.125" name="Lts_Inherited">
+  <DataContextMoniker Name="/Lts_InheritedDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1cbff922-d78b-47ff-83d1-0ee359c4bc11" absoluteBounds="4, 8, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/Lts_InheritedDataContext/Tb_CertPersonPay" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3ce09b9d-e32c-403a-ae1f-5c20c182e354" absoluteBounds="4.015, 8.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b5c0818f-d456-4a39-b3b1-3cf5f2c54f97" absoluteBounds="2.625, 2.875, 2, 2.5401025390625">
+      <DataClassMoniker Name="/Lts_InheritedDataContext/Tb_Apply" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4e8bd7ca-75eb-4947-b15e-fb4229b410ba" absoluteBounds="2.64, 3.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="db9082fd-07ac-4487-9952-1d4d5f403b4f" absoluteBounds="5, 6.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/Lts_InheritedDataContext/Tb_File" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a716714a-aa14-4332-947a-44de16fb4920" absoluteBounds="5.015, 6.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a9c6e341-5fef-4ccb-94b8-209432e7df33" absoluteBounds="7.125, 1.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/Lts_InheritedDataContext/Tb_User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0d7a67df-4c38-4b78-89fb-e36ea9872769" absoluteBounds="7.14, 2.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e66169f2-dc3b-4e3d-be21-3b50bab48633" absoluteBounds="6.75, 4.625, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/Lts_InheritedDataContext/Tb_Office" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bcb6f43b-dc30-41d5-a607-124cec34a74b" absoluteBounds="6.765, 5.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.09375 : 4.625); (8.09375 : 4.09780110677083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Lts_InheritedDataContext/Tb_Office/Tb_Office_Tb_User" />
+      <nodes>
+        <classShapeMoniker Id="e66169f2-dc3b-4e3d-be21-3b50bab48633" />
+        <classShapeMoniker Id="a9c6e341-5fef-4ccb-94b8-209432e7df33" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ea005ef8-8d06-4a79-aa88-ff642cf1ab84" absoluteBounds="8.25, 8.125, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/Lts_InheritedDataContext/Tb_EstateType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2ad05ed5-b711-4778-8b20-bcba70866fae" absoluteBounds="8.265, 8.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bb049394-90e1-4135-ae53-4ff91859339a" absoluteBounds="4.75, 10.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/Lts_InheritedDataContext/Tb_Estate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="937841d0-9a9f-422d-964f-ec156fcd80cb" absoluteBounds="4.765, 11.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.375 : 10.75); (5.375 : 9.57859537760417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Lts_InheritedDataContext/Tb_Estate/Tb_Estate_Tb_CertPersonPay" />
+      <nodes>
+        <classShapeMoniker Id="bb049394-90e1-4135-ae53-4ff91859339a" />
+        <classShapeMoniker Id="1cbff922-d78b-47ff-83d1-0ee359c4bc11" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.25 : 9.31899251302083); (9.25 : 11.6354484049479); (6.75 : 11.6354484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Lts_InheritedDataContext/Tb_EstateType/Tb_EstateType_Tb_Estate" />
+      <nodes>
+        <classShapeMoniker Id="ea005ef8-8d06-4a79-aa88-ff642cf1ab84" />
+        <classShapeMoniker Id="bb049394-90e1-4135-ae53-4ff91859339a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="7d265eaf-f5e4-4837-9d5a-8ee3d221fd68" absoluteBounds="4, 14.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/Lts_InheritedDataContext/Tb_InqEstate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a3befb13-d216-4b2b-a15c-d456dbccad1e" absoluteBounds="4.015, 14.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.375 : 12.5208968098958); (5.375 : 14.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Lts_InheritedDataContext/Tb_Estate/Tb_Estate_Tb_InqEstate" />
+      <nodes>
+        <classShapeMoniker Id="bb049394-90e1-4135-ae53-4ff91859339a" />
+        <classShapeMoniker Id="7d265eaf-f5e4-4837-9d5a-8ee3d221fd68" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="f57ad885-7f04-4e44-bacc-7e7eb8b0fe1c" absoluteBounds="3.5, 15.625, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/Lts_InheritedDataContext/Tb_InquiryType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7cccb050-4d31-44d2-a5d1-dd856d73d76b" absoluteBounds="3.515, 16.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7127327b-7f0b-4630-bb77-ae4fbf2dfc2b" absoluteBounds="1, 12.25, 2, 1.9631982421875">
+      <DataClassMoniker Name="/Lts_InheritedDataContext/Tb_Inquiry" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c5d52e1e-bb09-4a7d-b2a4-f6b85c5e96c0" absoluteBounds="1.0150000000000001, 12.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3 : 13.3229459049479); (4.34375 : 13.3229459049479); (4.34375 : 14.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Lts_InheritedDataContext/Tb_Inquiry/Tb_Inquiry_Tb_InqEstate" />
+      <nodes>
+        <classShapeMoniker Id="7127327b-7f0b-4630-bb77-ae4fbf2dfc2b" />
+        <classShapeMoniker Id="7d265eaf-f5e4-4837-9d5a-8ee3d221fd68" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.71875 : 15.625); (3.71875 : 13.723975452474); (3 : 13.723975452474)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Lts_InheritedDataContext/Tb_InquiryType/Tb_InquiryType_Tb_Inquiry" />
+      <nodes>
+        <classShapeMoniker Id="f57ad885-7f04-4e44-bacc-7e7eb8b0fe1c" />
+        <classShapeMoniker Id="7127327b-7f0b-4630-bb77-ae4fbf2dfc2b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="bb859145-ac7f-4615-99e4-3ebec3dae6c1" absoluteBounds="4.625, 0.625, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/Lts_InheritedDataContext/Tb_Person" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dfd42d38-a796-42de-9f8c-b2a26d9952f9" absoluteBounds="4.64, 1.085, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.625 : 2.37580485026042); (6.6875 : 2.37580485026042); (6.6875 : 6.0625); (4.9375 : 6.0625); (4.9375 : 7.90625); (5 : 7.90625); (5 : 8)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Lts_InheritedDataContext/Tb_Person/Tb_Person_Tb_CertPersonPay" />
+      <nodes>
+        <classShapeMoniker Id="bb859145-ac7f-4615-99e4-3ebec3dae6c1" />
+        <classShapeMoniker Id="1cbff922-d78b-47ff-83d1-0ee359c4bc11" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="dba97a3d-f83a-4768-9b0f-1e988bb02c00" absoluteBounds="2.125, 10.25, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/Lts_InheritedDataContext/Tb_RatioType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="798ecfb0-1fbc-46a6-aeac-bf688033cfc0" absoluteBounds="2.14, 10.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ca20c459-baba-4376-9924-a8fb6673328e" absoluteBounds="2.5, 5.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/Lts_InheritedDataContext/Tb_Heir" />
+      <nestedChildShapes>
+        <elementListCompartment Id="014e80e7-23e7-4af1-ab1e-52febe04c004" absoluteBounds="2.515, 6.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.0937495 : 4.12660970052083); (6.0937495 : 6); (4.875 : 6); (4.875 : 6.79169790494792); (4.5 : 6.79169790494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Lts_InheritedDataContext/Tb_Person/Tb_Person_Tb_Heir" />
+      <nodes>
+        <classShapeMoniker Id="bb859145-ac7f-4615-99e4-3ebec3dae6c1" />
+        <classShapeMoniker Id="ca20c459-baba-4376-9924-a8fb6673328e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.75 : 10.25); (3.75 : 7.52089680989583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Lts_InheritedDataContext/Tb_RatioType/Tb_RatioType_Tb_Heir" />
+      <nodes>
+        <classShapeMoniker Id="dba97a3d-f83a-4768-9b0f-1e988bb02c00" />
+        <classShapeMoniker Id="ca20c459-baba-4376-9924-a8fb6673328e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ff51ee8d-a008-424c-a711-2547d96f9280" absoluteBounds="1.5, 8, 2, 1.9631982421875">
+      <DataClassMoniker Name="/Lts_InheritedDataContext/Tb_CertPay" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0933d554-fbd0-46ac-85fe-0083989f9473" absoluteBounds="1.5150000000000001, 8.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.5 : 8.78929768880208); (3.66666666666667 : 8.78929768880208 : JumpStart); (3.83333333333333 : 8.78929768880208 : JumpEnd); (4 : 8.78929768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Lts_InheritedDataContext/Tb_CertPay/Tb_CertPay_Tb_CertPersonPay" />
+      <nodes>
+        <classShapeMoniker Id="ff51ee8d-a008-424c-a711-2547d96f9280" />
+        <classShapeMoniker Id="1cbff922-d78b-47ff-83d1-0ee359c4bc11" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="55f36001-cd18-4ae1-8db0-a3556a9b0867" absoluteBounds="0.75, 0.5, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/Lts_InheritedDataContext/Tb_Dead" />
+      <nestedChildShapes>
+        <elementListCompartment Id="340455c1-1b7f-4749-960d-5ef683b6c5aa" absoluteBounds="0.76500000000000012, 0.96, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.6874995); (3.6562505 : 1.6874995); (3.6562505 : 2.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Lts_InheritedDataContext/Tb_Dead/Tb_Dead_Tb_Apply" />
+      <nodes>
+        <classShapeMoniker Id="55f36001-cd18-4ae1-8db0-a3556a9b0867" />
+        <classShapeMoniker Id="b5c0818f-d456-4a39-b3b1-3cf5f2c54f97" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.59375 : 4.1939111328125); (1.59375 : 7.64349609375); (1.75260516666667 : 7.64349609375 : JumpStart); (1.91927183333333 : 7.64349609375 : JumpEnd); (5 : 7.64349609375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Lts_InheritedDataContext/Tb_Dead/Tb_Dead_Tb_File" />
+      <nodes>
+        <classShapeMoniker Id="55f36001-cd18-4ae1-8db0-a3556a9b0867" />
+        <classShapeMoniker Id="db9082fd-07ac-4487-9952-1d4d5f403b4f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(0.84375 : 4.1939111328125); (0.84375 : 11.8469962565104); (1.13541666666667 : 11.8469962565104 : JumpStart); (1.30208333333333 : 11.8469962565104 : JumpEnd); (4.75 : 11.8469962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Lts_InheritedDataContext/Tb_Dead/Tb_Dead_Tb_Estate" />
+      <nodes>
+        <classShapeMoniker Id="55f36001-cd18-4ae1-8db0-a3556a9b0867" />
+        <classShapeMoniker Id="bb049394-90e1-4135-ae53-4ff91859339a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.21875 : 4.1939111328125); (1.21875 : 12.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Lts_InheritedDataContext/Tb_Dead/Tb_Dead_Tb_Inquiry" />
+      <nodes>
+        <classShapeMoniker Id="55f36001-cd18-4ae1-8db0-a3556a9b0867" />
+        <classShapeMoniker Id="7127327b-7f0b-4630-bb77-ae4fbf2dfc2b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.078127 : 4.1939111328125); (2.078127 : 6.63544840494792); (2.5 : 6.63544840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Lts_InheritedDataContext/Tb_Dead/Tb_Dead_Tb_Heir" />
+      <nodes>
+        <classShapeMoniker Id="55f36001-cd18-4ae1-8db0-a3556a9b0867" />
+        <classShapeMoniker Id="ca20c459-baba-4376-9924-a8fb6673328e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.8359385 : 4.1939111328125); (1.8359385 : 8)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Lts_InheritedDataContext/Tb_Dead/Tb_Dead_Tb_CertPay" />
+      <nodes>
+        <classShapeMoniker Id="55f36001-cd18-4ae1-8db0-a3556a9b0867" />
+        <classShapeMoniker Id="ff51ee8d-a008-424c-a711-2547d96f9280" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.125 : 1.75); (8.125 : 0.53125); (2.75 : 0.53125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Lts_InheritedDataContext/Tb_User/Tb_User_Tb_Dead" />
+      <nodes>
+        <classShapeMoniker Id="a9c6e341-5fef-4ccb-94b8-209432e7df33" />
+        <classShapeMoniker Id="55f36001-cd18-4ae1-8db0-a3556a9b0867" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Inherited" Class="Lts_InheritedDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=10.44.0.144\tax;Initial Catalog=Inherited;Persist Security Info=True;User ID=ers" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="InheritedConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Tb_CertPersonPay" Member="Tb_CertPersonPays">
+    <Type Name="Tb_CertPersonPay">
+      <Column Name="xCtpId_pk" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xCrtId_fk" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="xPrsId_fk" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="xEstId_fk" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Tb_Estate_Tb_CertPersonPay" Member="Tb_Estate" ThisKey="xEstId_fk" OtherKey="xEstId_pk" Type="Tb_Estate" IsForeignKey="true" />
+      <Association Name="Tb_Person_Tb_CertPersonPay" Member="Tb_Person" ThisKey="xPrsId_fk" OtherKey="xPrsId_pk" Type="Tb_Person" IsForeignKey="true" />
+      <Association Name="Tb_CertPay_Tb_CertPersonPay" Member="Tb_CertPay" ThisKey="xCrtId_fk" OtherKey="xCrtId_pk" Type="Tb_CertPay" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tb_Apply" Member="Tb_Applies">
+    <Type Name="Tb_Apply">
+      <Column Name="xAppId_pk" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xDedId_fk" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="xAppRegNo" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xAppRegDate" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xAppHasrNo" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xAppHasrDate" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xAppShobeDadgah" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xAppDadgah" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="[xAppIsDeleted?]" Member="xAppIsDeleted_" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Tb_Dead_Tb_Apply" Member="Tb_Dead" ThisKey="xDedId_fk" OtherKey="xDedId_pk" Type="Tb_Dead" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tb_Files" Member="Tb_Files">
+    <Type Name="Tb_File">
+      <Column Name="xFileid_pk" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xClass" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xHozeh" Type="System.String" DbType="NChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedId_fk" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Tb_Dead_Tb_File" Member="Tb_Dead" ThisKey="xDedId_fk" OtherKey="xDedId_pk" Type="Tb_Dead" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tb_User" Member="Tb_Users">
+    <Type Name="Tb_User">
+      <Column Name="xUserId_pk" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xUserFName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xUserLName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="xUserName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xUserPassword" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xUser_Hozeh" Type="System.String" DbType="NChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="xOfficeId_fk" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[xUserIsDeleted?]" Member="xUserIsDeleted_" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Tb_User_Tb_Dead" Member="Tb_Deads" ThisKey="xUserId_pk" OtherKey="xUserId_fk" Type="Tb_Dead" />
+      <Association Name="Tb_Office_Tb_User" Member="Tb_Office" ThisKey="xOfficeId_fk" OtherKey="xOfficeId_pk" Type="Tb_Office" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tb_Office" Member="Tb_Offices">
+    <Type Name="Tb_Office">
+      <Column Name="xOfficeId_pk" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xOfficeNo" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="xOfficeAddrress" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="xOfficeTel" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xOfficePostalcode" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="Tb_Office_Tb_User" Member="Tb_Users" ThisKey="xOfficeId_pk" OtherKey="xOfficeId_fk" Type="Tb_User" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tb_EstateType" Member="Tb_EstateTypes">
+    <Type Name="Tb_EstateType">
+      <Column Name="xEstTypeId_pk" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xEstType" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Tb_EstateType_Tb_Estate" Member="Tb_Estates" ThisKey="xEstTypeId_pk" OtherKey="xEstTypeId_fk" Type="Tb_Estate" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tb_Estates" Member="Tb_Estates">
+    <Type Name="Tb_Estate">
+      <Column Name="xEstId_pk" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xDedId_fk" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="xEstTypeId_fk" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="xEstDescription" Type="System.String" DbType="NVarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="[xEstIsDeleted?]" Member="xEstIsDeleted_" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Tb_Estate_Tb_CertPersonPay" Member="Tb_CertPersonPays" ThisKey="xEstId_pk" OtherKey="xEstId_fk" Type="Tb_CertPersonPay" />
+      <Association Name="Tb_Estate_Tb_InqEstate" Member="Tb_InqEstates" ThisKey="xEstId_pk" OtherKey="xEstId_fk" Type="Tb_InqEstate" />
+      <Association Name="Tb_EstateType_Tb_Estate" Member="Tb_EstateType" ThisKey="xEstTypeId_fk" OtherKey="xEstTypeId_pk" Type="Tb_EstateType" IsForeignKey="true" />
+      <Association Name="Tb_Dead_Tb_Estate" Member="Tb_Dead" ThisKey="xDedId_fk" OtherKey="xDedId_pk" Type="Tb_Dead" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tb_InqEstates" Member="Tb_InqEstates">
+    <Type Name="Tb_InqEstate">
+      <Column Name="xInqEstId_pk" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xEstId_fk" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="xInqId_fk" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Tb_Estate_Tb_InqEstate" Member="Tb_Estate" ThisKey="xEstId_fk" OtherKey="xEstId_pk" Type="Tb_Estate" IsForeignKey="true" />
+      <Association Name="Tb_Inquiry_Tb_InqEstate" Member="Tb_Inquiry" ThisKey="xInqId_fk" OtherKey="xInqId_pk" Type="Tb_Inquiry" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tb_InquiryType" Member="Tb_InquiryTypes">
+    <Type Name="Tb_InquiryType">
+      <Column Name="xInqTypeId_pk" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xInqType" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Tb_InquiryType_Tb_Inquiry" Member="Tb_Inquiries" ThisKey="xInqTypeId_pk" OtherKey="xInqTypeId_fk" Type="Tb_Inquiry" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tb_Inquiries" Member="Tb_Inquiries">
+    <Type Name="Tb_Inquiry">
+      <Column Name="xInqId_pk" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xDedId_fk" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="xInqTypeId_fk" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="xInqDate" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xInqRegNo" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[xInqIsDeleted?]" Member="xInqIsDeleted_" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Tb_Inquiry_Tb_InqEstate" Member="Tb_InqEstates" ThisKey="xInqId_pk" OtherKey="xInqId_fk" Type="Tb_InqEstate" />
+      <Association Name="Tb_InquiryType_Tb_Inquiry" Member="Tb_InquiryType" ThisKey="xInqTypeId_fk" OtherKey="xInqTypeId_pk" Type="Tb_InquiryType" IsForeignKey="true" />
+      <Association Name="Tb_Dead_Tb_Inquiry" Member="Tb_Dead" ThisKey="xDedId_fk" OtherKey="xDedId_pk" Type="Tb_Dead" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tb_Person" Member="Tb_Persons">
+    <Type Name="Tb_Person">
+      <Column Name="xPrsId_pk" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xPrsFName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xPrsLName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xPrsFatherName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xPrsBirthDate" Type="System.String" DbType="NChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="xPrsBirthPlace" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xPrsSex" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="xPrsIdNo" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xPrsIssuancePalce" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xPrsNationalCode" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xPrsPostalCode" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xPrsAddrress" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="xPrsTel" Type="System.String" DbType="NChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="[xPrsIsDeleted?]" Member="xPrsIsDeleted_" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Tb_Person_Tb_CertPersonPay" Member="Tb_CertPersonPays" ThisKey="xPrsId_pk" OtherKey="xPrsId_fk" Type="Tb_CertPersonPay" />
+      <Association Name="Tb_Person_Tb_Heir" Member="Tb_Heirs" ThisKey="xPrsId_pk" OtherKey="xPrsId_fk" Type="Tb_Heir" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tb_RatioType" Member="Tb_RatioTypes">
+    <Type Name="Tb_RatioType">
+      <Column Name="xRtoId_pk" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xRtoType" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="Tb_RatioType_Tb_Heir" Member="Tb_Heirs" ThisKey="xRtoId_pk" OtherKey="xRtoId_fk" Type="Tb_Heir" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tb_Heirs" Member="Tb_Heirs">
+    <Type Name="Tb_Heir">
+      <Column Name="xHeirId_pk" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xPrsId_fk" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="xDedId_fk" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="xRtoId_fk" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[xIsApplicant?]" Member="xIsApplicant_" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Tb_Person_Tb_Heir" Member="Tb_Person" ThisKey="xPrsId_fk" OtherKey="xPrsId_pk" Type="Tb_Person" IsForeignKey="true" />
+      <Association Name="Tb_RatioType_Tb_Heir" Member="Tb_RatioType" ThisKey="xRtoId_fk" OtherKey="xRtoId_pk" Type="Tb_RatioType" IsForeignKey="true" />
+      <Association Name="Tb_Dead_Tb_Heir" Member="Tb_Dead" ThisKey="xDedId_fk" OtherKey="xDedId_pk" Type="Tb_Dead" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tb_CertPay" Member="Tb_CertPays">
+    <Type Name="Tb_CertPay">
+      <Column Name="xCrtId_pk" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xCrtRegNo" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xCrtRegDate" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedId_fk" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="xCrtTo" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="[xCrtIsDeleted?]" Member="xCrtIsDeleted_" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Tb_CertPay_Tb_CertPersonPay" Member="Tb_CertPersonPays" ThisKey="xCrtId_pk" OtherKey="xCrtId_fk" Type="Tb_CertPersonPay" />
+      <Association Name="Tb_Dead_Tb_CertPay" Member="Tb_Dead" ThisKey="xDedId_fk" OtherKey="xDedId_pk" Type="Tb_Dead" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tb_Dead" Member="Tb_Deads">
+    <Type Name="Tb_Dead">
+      <Column Name="xDedId_pk" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="xDedFName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedLName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedFatherName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedDeadDate" Type="System.String" DbType="NChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedDeadPlace" Type="System.String" DbType="NChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedSex" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedIdNo" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedIssuancePlace" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedNationalCode" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedCodeHoviat" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="xDedCodeAtba" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="xUserId_fk" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="xDedRegDate" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="[xDedIsDeleted?]" Member="xDedIsDeleted_" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Tb_Dead_Tb_Apply" Member="Tb_Applies" ThisKey="xDedId_pk" OtherKey="xDedId_fk" Type="Tb_Apply" />
+      <Association Name="Tb_Dead_Tb_File" Member="Tb_Files" ThisKey="xDedId_pk" OtherKey="xDedId_fk" Type="Tb_File" />
+      <Association Name="Tb_Dead_Tb_Estate" Member="Tb_Estates" ThisKey="xDedId_pk" OtherKey="xDedId_fk" Type="Tb_Estate" />
+      <Association Name="Tb_Dead_Tb_Inquiry" Member="Tb_Inquiries" ThisKey="xDedId_pk" OtherKey="xDedId_fk" Type="Tb_Inquiry" />
+      <Association Name="Tb_Dead_Tb_Heir" Member="Tb_Heirs" ThisKey="xDedId_pk" OtherKey="xDedId_fk" Type="Tb_Heir" />
+      <Association Name="Tb_Dead_Tb_CertPay" Member="Tb_CertPays" ThisKey="xDedId_pk" OtherKey="xDedId_fk" Type="Tb_CertPay" />
+      <Association Name="Tb_User_Tb_Dead" Member="Tb_User" ThisKey="xUserId_fk" OtherKey="xUserId_pk" Type="Tb_User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.Inq_Asnad" Method="Inq_Asnad">
+    <Parameter Name="DedId" Parameter="dedId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="EstateId" Parameter="estateId" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Inq_AsnadResult">
+      <Column Name="xEstType" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xEstDescription" Type="System.String" DbType="NVarChar(1000) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CertPay_Estates" Method="CertPay_Estates">
+    <Parameter Name="CertId" Parameter="certId" Type="System.Int32" DbType="Int" />
+    <ElementType Name="CertPay_EstatesResult">
+      <Column Name="xEstDescription" Type="System.String" DbType="NVarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="xEstType" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xCrtId_fk" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CertPay_Person" Method="CertPay_Person">
+    <Parameter Name="CertId" Parameter="certId" Type="System.Int32" DbType="Int" />
+    <ElementType Name="CertPay_PersonResult">
+      <Column Name="PrsFullName" Type="System.String" DbType="NVarChar(101) NOT NULL" CanBeNull="false" />
+      <Column Name="xPrsFatherName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xPrsBirthDate" Type="System.String" DbType="NChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="xPrsBirthPlace" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xPrsIdNo" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xPrsIssuancePalce" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xPrsNationalCode" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xPrsPostalCode" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xPrsAddrress" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="xPrsTel" Type="System.String" DbType="NChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="xCrtId_fk" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CertPay_Dead" Method="CertPay_Dead">
+    <Parameter Name="CertId" Parameter="certId" Type="System.Int32" DbType="Int" />
+    <ElementType Name="CertPay_DeadResult">
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(101) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedFatherName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedDeadDate" Type="System.String" DbType="NChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedDeadPlace" Type="System.String" DbType="NChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedIdNo" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedIssuancePlace" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedNationalCode" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xCrtRegNo" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xCrtRegDate" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xCrtTo" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="xClass" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xHozeh" Type="System.String" DbType="NChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="xOfficeNo" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="xOfficeAddrress" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="xOfficeTel" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xOfficePostalcode" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xUserFName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xUserLName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="xUser_Hozeh" Type="System.String" DbType="NChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="xAppRegNo" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xAppRegDate" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xAppHasrNo" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xAppHasrDate" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xAppShobeDadgah" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xAppDadgah" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Sp_DeadSearch" Method="Sp_DeadSearch">
+    <Parameter Name="fname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="lname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Nationalcode" Parameter="nationalcode" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="classe" Type="System.String" DbType="NVarChar(5)" />
+    <Parameter Name="Hozeh" Parameter="hozeh" Type="System.String" DbType="NChar(6)" />
+    <ElementType Name="Sp_DeadSearchResult">
+      <Column Name="xDedId_pk" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="xDedFName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedLName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedFatherName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedDeadDate" Type="System.String" DbType="NChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedIdNo" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedNationalCode" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xDedCodeAtba" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="xClass" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="xHozeh" Type="System.String" DbType="NChar(6) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

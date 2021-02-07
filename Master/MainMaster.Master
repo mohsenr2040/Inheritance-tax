@@ -1,0 +1,232 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMaster.master.cs" Inherits="Ers_Pro.Master.MainMaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>سامانه مالیات بر ارث</title>
+    <link type="text/css" rel="Stylesheet" href="../App_Themes/Skin/default.css" />
+    <link type="text/css" rel="Stylesheet" href="../App_Themes/Master/M_Style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="App_Themes/Icon/Web_icon.ico" />
+    <script src="../Script/JavaScript.js" type="text/javascript"></script>
+
+    <script type="text/javascript" lang="ja">
+        function cancelBack() {
+            if ((event.keyCode == 8 || event.keyCode == 13 ||
+           (event.keyCode == 37 && event.altKey) ||
+           (event.keyCode == 39 && event.altKey))
+            &&
+           (event.srcElement.form == null || event.srcElement.isTextEdit == false)
+          ) {
+                event.cancelBubble = true;
+                event.returnValue = false;
+                event.preventDefault();
+            }
+        }
+    </script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="font-family: Tahoma; font-size: 11px" onkeydown="cancelBack()">
+    <form id="form1" runat="server">
+
+        <table class="table" cellpadding="0" cellspacing="0" style="background-color: #F1F8FB; height: 100%; width: 100%;" dir="rtl">
+            <tr>
+                <td>
+                    <table class="table" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td style="background-image: url('../../App_Themes/Master/Images/bg_logo.png'); background-repeat: no-repeat; width: 309px; height: 79px;"></td>
+                            <td style="background-image: url('../../App_Themes/Master/Images/bg_header_left.jpg'); background-repeat: repeat-y; width: 686px"></td>
+                            <td style="background-color: #61A5CA"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="menu-bg">
+                    <table cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <table class="glossymenu" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td runat="server" id="Afs_MenuLi" enableviewstate="False">
+                                            <asp:ImageButton ID="IBtn_Sabt" runat="server" ImageUrl="~/App_Themes/Master/M_Images/btn/12.png"
+                                                OnClick="IBtn_Sabt_Click" CausesValidation="False" Enabled="False" />
+                                        </td>
+                                        <td runat="server" id="Sal_MenuLi" enableviewstate="False">
+                                            <asp:ImageButton ID="IBtn_Admin" runat="server" ImageUrl="~/App_Themes/Master/M_Images/btn/2.png"
+                                                OnClick="IBtn_Admin_Click" CausesValidation="False" Enabled="False" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td style="width: 100%; text-align: left; padding-left: 15px; vertical-align:central">
+
+                                 <asp:Label ID="Lbl_User" runat="server"></asp:Label>
+                                 <asp:ImageButton ID="Ibtn_Exit" runat="server"
+                                    OnClientClick="cancelBack()" ImageUrl="~/App_Themes/Master/M_Images/btn/02.png" OnClick="Ibtn_Exit_Click" CausesValidation="False" />
+
+                              
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-image: url('../../App_Themes/Master/Images/bg_menu.jpg'); background-repeat: repeat-x; height: 30px; padding-right: 5px;">
+                    <asp:Menu ID="Mnu_Sabt" runat="server" DynamicVerticalOffset="1" Orientation="Horizontal"
+                        Visible="true" StaticEnableDefaultPopOutImage="False" StaticSubMenuIndent="" >
+                        <StaticMenuItemStyle ForeColor="#363630" HorizontalPadding="10px" BorderColor="White"  Height="10px" VerticalPadding="10px" />
+                        <DynamicHoverStyle ForeColor="Red" CssClass="Menu_Pic_2" BackColor="#A1E7BD" />
+                        <DynamicMenuStyle BackColor="#82B8D4" HorizontalPadding="8px" />
+                        <DynamicMenuItemStyle CssClass="Menu_Pic1" ForeColor="#363636" Height="15px" VerticalPadding="8px" />
+                        <StaticHoverStyle ForeColor="Red" BackColor="#82B8D4" Height="10px" BorderColor="White"  />
+                        <Items>
+                            <asp:MenuItem Text="بررسی قبل از ثبت" ImageUrl="~/App_Themes/Master/M_Images/img28.png"
+                                NavigateUrl="~/Int_Registers/RegPreControl.aspx"></asp:MenuItem>
+
+                            <asp:MenuItem Text=" ثبت پرونده " Selectable="false" ImageUrl="~/App_Themes/Master/M_Images/img28.png">
+                                <asp:MenuItem Text=" ثبت مشخصات متوفی " ImageUrl="~/App_Themes/Master/M_Images/img28.png" SeparatorImageUrl="../App_Themes/Master/Images/Seperator1.png"
+                                    NavigateUrl="~/Int_Registers/RegDead.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="ثبت اطلاعات فرم درخواست " ImageUrl="~/App_Themes/Master/M_Images/img28.png" SeparatorImageUrl="../App_Themes/Master/Images/Seperator1.png"
+                                    NavigateUrl="~/Int_Registers/ApplyFormReg.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="ثبت مشخصات وراث " ImageUrl="~/App_Themes/Master/M_Images/img28.png" SeparatorImageUrl="../App_Themes/Master/Images/Seperator1.png"
+                                    NavigateUrl="~/Int_Registers/RegisterHeirs.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="ثبت دارایی های متوفی" ImageUrl="~/App_Themes/Master/M_Images/img28.png"
+                                    NavigateUrl="~/Int_Registers/RegEstates.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+
+                            <asp:MenuItem Text=" استعلامات " Selectable="false" ImageUrl="~/App_Themes/Master/M_Images/img28.png">
+                                <asp:MenuItem Text="شرکت " ImageUrl="~/App_Themes/Master/M_Images/img28.png" SeparatorImageUrl="../App_Themes/Master/Images/Seperator1.png"
+                                    NavigateUrl="~/Int_Inquiries/Company/Inq_Company.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="بانک/موسسه " ImageUrl="~/App_Themes/Master/M_Images/img28.png" SeparatorImageUrl="../App_Themes/Master/Images/Seperator1.png"
+                                    NavigateUrl="~/Int_Inquiries/Bank/Inq_Bank.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="ادارات امور مالیاتی " ImageUrl="~/App_Themes/Master/M_Images/img28.png" SeparatorImageUrl="../App_Themes/Master/Images/Seperator1.png"
+                                    NavigateUrl="~/Int_Inquiries/TaxOffice/Inq_TaxOffic.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="اداره ثبت اسناد و املاک " ImageUrl="~/App_Themes/Master/M_Images/img28.png" SeparatorImageUrl="../App_Themes/Master/Images/Seperator1.png"
+                                    NavigateUrl="~/Int_Inquiries/Asnad/Inq_Asnad.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="سازمان بورس و اوراق بهادار" ImageUrl="~/App_Themes/Master/M_Images/img28.png"
+                                    NavigateUrl=""></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="صدور گواهی پرداخت مالیات بر ارث " ImageUrl="~/App_Themes/Master/M_Images/img28.png"
+                                NavigateUrl="~/Int_Cert/AccPay.aspx"></asp:MenuItem>
+
+
+                            <asp:MenuItem Text=" تغییر رمز عبور" Value="" ImageUrl="~/App_Themes/Master/M_Images/img28.png" NavigateUrl="~/Isf_Adm_Frms/Hgh_ChangePassword.aspx"></asp:MenuItem>
+                            <%--<asp:MenuItem Text=" خروج  " Value="" ImageUrl="~/App_Themes/Master/M_Images/img28.png" NavigateUrl="~/Login.aspx"></asp:MenuItem>--%>
+                        </Items>
+                    </asp:Menu>
+                    <asp:Menu ID="Mnu_Admin" runat="server" DynamicVerticalOffset="3" Orientation="Horizontal"
+                        Visible="false" StaticEnableDefaultPopOutImage="False" StaticSubMenuIndent=""
+                        DynamicPopOutImageUrl="~/App_Themes/Master/M_Images/Point.gif" StaticTopSeparatorImageUrl="~/App_Themes/Master/M_Images/seprator.gif">
+                        <StaticMenuItemStyle ForeColor="#363630" HorizontalPadding="6px" />
+                        <DynamicHoverStyle ForeColor="White" CssClass="Menu_Pic_2" />
+                        <DynamicMenuStyle BackColor="#A1E7BD" />
+                        <DynamicMenuItemStyle CssClass="Menu_Pic1" ForeColor="#363636" Height="24px" />
+                        <StaticHoverStyle ForeColor="#386177" BackColor="#A1E7BD" Height="25px" />
+                        <Items>
+
+                            <asp:MenuItem Text="تعریف کاربران " ImageUrl="~/App_Themes/Master/M_Images/img28.png"
+                                NavigateUrl="~/Isf_Adm_Frms/Hgh_Users.aspx"></asp:MenuItem>
+
+                        </Items>
+                    </asp:Menu>
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="table" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td style="background-image: url('../../App_Themes/Master/Images/bg_Topright_s.png'); background-repeat: no-repeat; width: 21px; height: 18px;"></td>
+                            <td style="background-image: url('../../App_Themes/Master/Images/bg_top_s.png'); background-repeat: repeat-x; height: 18px;"></td>
+                            <td style="background-image: url('../../App_Themes/Master/Images/bg_Topleft_s.png'); background-repeat: no-repeat; width: 21px; height: 18px;"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="table" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td style="background-image: url('../../App_Themes/Master/Images/bg_right_s.png'); background-repeat: repeat-y; width: 21px;"></td>
+                            <td style="height: 380px" valign="top">
+                                <table class="table" cellpadding="0" cellspacing="0">
+                                    <tr>
+
+                                        <td style="vertical-align: top">
+                                            <table class="table" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td>
+                                                        <table dir="rtl" cellpadding="0" cellspacing="0">
+                                                            <tr>
+                                                                <td class="title">
+                                                                    <table cellspacing="0" style="margin-right: 30px">
+                                                                        <tr>
+                                                                            <td>
+                                                                                <asp:Label ID="Lbl_Title" runat="server" Text="" Style="font-family: Tahoma"> </asp:Label>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <table class="table" dir="rtl" cellpadding="0" cellspacing="0">
+                                                            <tr>
+                                                                <td class="maincorner-1"></td>
+                                                                <td class="mainline-t"></td>
+                                                                <td class="maincorner-4"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="mainline-r"></td>
+                                                                <td style="background-color: White">
+                                                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                                                    </asp:ContentPlaceHolder>
+                                                                </td>
+                                                                <td class="mainline-l"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="maincorner-2"></td>
+                                                                <td class="mainline-b"></td>
+                                                                <td class="maincorner-3"></td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                            <td style="background-image: url('../../App_Themes/Master/Images/bg_left_s.png'); background-repeat: repeat-y; width: 21px;"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="table" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td style="background-image: url('../../App_Themes/Master/Images/bg_footer_Right.png'); width: 22px; height: 95px;"></td>
+                            <td style="background-image: url('../../App_Themes/Master/Images/bg_footer.png'); background-repeat: repeat-x;"
+                                align="center">سامانه مالیات بر ارث 
+                            <br />
+                                <br />
+                                طراحی و پیاده سازی: محسن رضائی  -  کارشناس فناوری اطلاعات&nbsp;
+                            </td>
+                            <td style="background-image: url('../../App_Themes/Master/Images/bg_footer_lrft.png'); width: 21px; height: 95px;"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

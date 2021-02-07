@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5A2956B6-24D1-4C61-92D8-2E9A4F0C05C9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ers_Pro</RootNamespace>
+    <AssemblyName>Ers_Pro</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.50731.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxFixedUpdateProgress, Version=1.0.3721.19824, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxFixedUpdateProgress.dll</HintPath>
+    </Reference>
+    <Reference Include="Ext_TextBox, Version=1.0.3759.27357, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Ext_TextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="MaskTextBox, Version=1.0.4033.23202, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\es012\Documents\Visual Studio 2013\Projects\Herasat_Pro\Herasat_Pro\bin\MaskTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="ShamsiDateTime, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\sources\SubscriberServiceIsfahan5_\Bin\ShamsiDateTime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="xPanel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\xPanel.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Icon\Web_icon.ico" />
+    <Content Include="App_Themes\Inq_Images\Inq_Head.png" />
+    <Content Include="App_Themes\Master\Images\Seperator1.png" />
+    <Content Include="App_Themes\Skin\Pub_Images\calc_icon.jpg" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\AjaxFixedUpdateProgress.dll" />
+    <Content Include="bin\Ers_Pro.dll" />
+    <Content Include="bin\Ers_Pro.pdb" />
+    <Content Include="bin\Ext_TextBox.dll" />
+    <Content Include="bin\MaskTextBox.dll" />
+    <Content Include="bin\ShamsiDateTime.dll" />
+    <Content Include="bin\TextBoxExt.dll" />
+    <Content Include="bin\xPanel.dll" />
+    <Content Include="Int_Cert\AccPay.aspx" />
+    <Content Include="Int_Cert\Rpt_Print.aspx" />
+    <Content Include="Int_Inquiries\Asnad\Inq_Asnad.aspx" />
+    <Content Include="Int_Inquiries\Bank\Inq_Bank.aspx" />
+    <Content Include="Int_Inquiries\Asnad\Rpt_InqAsnad.aspx" />
+    <Content Include="Int_Inquiries\Bank\Rpt_Bank.aspx" />
+    <Content Include="Int_Inquiries\Company\Inq_Company.aspx" />
+    <Content Include="Int_Inquiries\TaxOffice\Inq_TaxOffic.aspx" />
+    <Content Include="Int_Inquiries\TaxOffice\Rpt_TaxOffice.aspx" />
+    <Content Include="Int_Registers\ApplyFormReg.aspx" />
+    <Content Include="App_Themes\Master\Images\bg_footer.jpg" />
+    <Content Include="App_Themes\Master\Images\bg_footer.png" />
+    <Content Include="App_Themes\Master\Images\bg_footer_lrft.jpg" />
+    <Content Include="App_Themes\Master\Images\bg_footer_lrft.png" />
+    <Content Include="App_Themes\Master\Images\bg_footer_Right.jpg" />
+    <Content Include="App_Themes\Master\Images\bg_footer_Right.png" />
+    <Content Include="App_Themes\Master\Images\bg_header_left.jpg" />
+    <Content Include="App_Themes\Master\Images\bg_left_s.jpg" />
+    <Content Include="App_Themes\Master\Images\bg_left_s.png" />
+    <Content Include="App_Themes\Master\Images\bg_logo.jpg" />
+    <Content Include="App_Themes\Master\Images\bg_logo.png" />
+    <Content Include="App_Themes\Master\Images\bg_menu.jpg" />
+    <Content Include="App_Themes\Master\Images\bg_right_s.jpg" />
+    <Content Include="App_Themes\Master\Images\bg_right_s.png" />
+    <Content Include="App_Themes\Master\Images\bg_Topleft_s.jpg" />
+    <Content Include="App_Themes\Master\Images\bg_Topleft_s.png" />
+    <Content Include="App_Themes\Master\Images\bg_Topright_s.jpg" />
+    <Content Include="App_Themes\Master\Images\bg_Topright_s.png" />
+    <Content Include="App_Themes\Master\Images\bg_top_s.jpg" />
+    <Content Include="App_Themes\Master\Images\bg_top_s.png" />
+    <Content Include="App_Themes\Master\Images\graphic.jpg" />
+    <Content Include="App_Themes\Master\Images\graphic__edit.jpg" />
+    <Content Include="App_Themes\Master\Images\Logo.png" />
+    <Content Include="App_Themes\Master\Images\Seperator2.png" />
+    <Content Include="App_Themes\Master\Images\temp.png" />
+    <Content Include="App_Themes\Master\M_Images\btn-bg.gif" />
+    <Content Include="App_Themes\Master\M_Images\btn-bg2.jpg" />
+    <Content Include="App_Themes\Master\M_Images\btn-bg2.png" />
+    <Content Include="App_Themes\Master\M_Images\btn\01.png" />
+    <Content Include="App_Themes\Master\M_Images\btn\02.png" />
+    <Content Include="App_Themes\Master\M_Images\btn\1.png" />
+    <Content Include="App_Themes\Master\M_Images\btn\12.png" />
+    <Content Include="App_Themes\Master\M_Images\btn\2.png" />
+    <Content Include="App_Themes\Master\M_Images\btn\22.png" />
+    <Content Include="App_Themes\Master\M_Images\grid-hdr2.gif" />
+    <Content Include="App_Themes\Master\M_Images\img03.png" />
+    <Content Include="App_Themes\Master\M_Images\img04.png" />
+    <Content Include="App_Themes\Master\M_Images\img05.png" />
+    <Content Include="App_Themes\Master\M_Images\img06.png" />
+    <Content Include="App_Themes\Master\M_Images\img07.png" />
+    <Content Include="App_Themes\Master\M_Images\img08.png" />
+    <Content Include="App_Themes\Master\M_Images\img13.png" />
+    <Content Include="App_Themes\Master\M_Images\img14.png" />
+    <Content Include="App_Themes\Master\M_Images\img15.png" />
+    <Content Include="App_Themes\Master\M_Images\img16.png" />
+    <Content Include="App_Themes\Master\M_Images\img17.png" />
+    <Content Include="App_Themes\Master\M_Images\img18.png" />
+    <Content Include="App_Themes\Master\M_Images\img19.png" />
+    <Content Include="App_Themes\Master\M_Images\img20.png" />
+    <Content Include="App_Themes\Master\M_Images\img21.png" />
+    <Content Include="App_Themes\Master\M_Images\img22.png" />
+    <Content Include="App_Themes\Master\M_Images\img26.png" />
+    <Content Include="App_Themes\Master\M_Images\img27.png" />
+    <Content Include="App_Themes\Master\M_Images\img28.png" />
+    <Content Include="App_Themes\Master\M_Images\img29.png" />
+    <Content Include="App_Themes\Master\M_Images\img30.png" />
+    <Content Include="App_Themes\Master\M_Images\img31.png" />
+    <Content Include="App_Themes\Master\M_Images\menu-bg.gif" />
+    <Content Include="App_Themes\Master\M_Images\menu-bg.png" />
+    <Content Include="App_Themes\Master\M_Images\menu-left.gif" />
+    <Content Include="App_Themes\Master\M_Images\menu-left.png" />
+    <Content Include="App_Themes\Master\M_Images\menu-right.gif" />
+    <Content Include="App_Themes\Master\M_Images\menu-right.png" />
+    <Content Include="App_Themes\Master\M_Images\menurow-bg.png" />
+    <Content Include="App_Themes\Master\M_Images\menurow-right.gif" />
+    <Content Include="App_Themes\Master\M_Images\menurow-right_.gif" />
+    <Content Include="App_Themes\Master\M_Images\menurowrow-bg.gif" />
+    <Content Include="App_Themes\Master\M_Images\menurowrow-right.gif" />
+    <Content Include="App_Themes\Master\M_Images\menur_bg.gif" />
+    <Content Include="App_Themes\Master\M_Images\menur_bg.png" />
+    <Content Include="App_Themes\Master\M_Images\menur_hover_right.gif" />
+    <Content Include="App_Themes\Master\M_Images\menur_hover_right.png" />
+    <Content Include="App_Themes\Master\M_Images\mnustatic.png" />
+    <Content Include="App_Themes\Master\M_Images\M_Style.css" />
+    <Content Include="App_Themes\Master\M_Images\Point.gif" />
+    <Content Include="App_Themes\Master\M_Images\searchcaption.gif" />
+    <Content Include="App_Themes\Master\M_Images\seprator.gif" />
+    <Content Include="App_Themes\Master\M_Style.css" />
+    <Content Include="App_Themes\Skin\default.css" />
+    <Content Include="App_Themes\Skin\imagesLogin\01.gif" />
+    <Content Include="App_Themes\Skin\imagesLogin\02.png" />
+    <Content Include="App_Themes\Skin\imagesLogin\03.png" />
+    <Content Include="App_Themes\Skin\imagesLogin\04.png" />
+    <Content Include="App_Themes\Skin\imagesLogin\05.png" />
+    <Content Include="App_Themes\Skin\imagesLogin\06.png" />
+    <Content Include="App_Themes\Skin\imagesLogin\btn1.png" />
+    <Content Include="App_Themes\Skin\imagesLogin\btn2.png" />
+    <Content Include="App_Themes\Skin\Pub_Images\11.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\14.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\24.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\25.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\34.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\Add.png" />
+    <Content Include="App_Themes\Skin\Pub_Images\alert.png" />
+    <Content Include="App_Themes\Skin\Pub_Images\Arm.png" />
+    <Content Include="App_Themes\Skin\Pub_Images\bill.jpg" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn-File.png" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn18b.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn19b.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn1a.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn1b.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn1R.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn20b.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn2a.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn2b.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn3a.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn3b.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn4a.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn4b.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn5a.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn5b.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn6a.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn6b.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn7a.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn7b.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn7b1.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn8b.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn9a.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn9b.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\BtnDel.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\BtnEdit.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\Btn_Add.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn_Calender.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn_Cancel.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn_del.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\Btn_Edit.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn_Enter.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn_PrintSome.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn_Return.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn_Return2.GIF" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn_Save.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn_Search.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\btn_send.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\caption-bg.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\caption-bg2.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\Checked.JPG" />
+    <Content Include="App_Themes\Skin\Pub_Images\Checked.PNG" />
+    <Content Include="App_Themes\Skin\Pub_Images\Clicked.PNG" />
+    <Content Include="App_Themes\Skin\Pub_Images\CloseShadow.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\Del_Node.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\Details.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\Details.png" />
+    <Content Include="App_Themes\Skin\Pub_Images\Download.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\DownloadIt.PNG" />
+    <Content Include="App_Themes\Skin\Pub_Images\EmptyPrint.GIF" />
+    <Content Include="App_Themes\Skin\Pub_Images\Entry.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\False.PNG" />
+    <Content Include="App_Themes\Skin\Pub_Images\False1.PNG" />
+    <Content Include="App_Themes\Skin\Pub_Images\FillDownHS.bmp" />
+    <Content Include="App_Themes\Skin\Pub_Images\FillLeftHS.png" />
+    <Content Include="App_Themes\Skin\Pub_Images\FillUpHS.BMP" />
+    <Content Include="App_Themes\Skin\Pub_Images\FullPrint.GIF" />
+    <Content Include="App_Themes\Skin\Pub_Images\grid-ftr.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\grid-hdr.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\grid-hdr_ %282%29.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\grid-hdr_.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\grid-hover.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\grid-row1.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\grid-row2.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\grid-selected.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\hesabdari.png" />
+    <Content Include="App_Themes\Skin\Pub_Images\ico9.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\img26.png" />
+    <Content Include="App_Themes\Skin\Pub_Images\img27.png" />
+    <Content Include="App_Themes\Skin\Pub_Images\img28.png" />
+    <Content Include="App_Themes\Skin\Pub_Images\img29.png" />
+    <Content Include="App_Themes\Skin\Pub_Images\img30.png" />
+    <Content Include="App_Themes\Skin\Pub_Images\img31.png" />
+    <Content Include="App_Themes\Skin\Pub_Images\Insert_Node.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\login.png" />
+    <Content Include="App_Themes\Skin\Pub_Images\MouseOver.PNG" />
+    <Content Include="App_Themes\Skin\Pub_Images\next.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\NextLevel.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\Normal.PNG" />
+    <Content Include="App_Themes\Skin\Pub_Images\OnlyPrint.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\Point.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\prev.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\Print.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\public-2a.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\public-2b.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\public-3a.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\public-3b.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\public-4a.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\public-4b.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\public-a.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\public-b.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\reeskhadamat.png" />
+    <Content Include="App_Themes\Skin\Pub_Images\reesmali.png" />
+    <Content Include="App_Themes\Skin\Pub_Images\row-bg.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\searchcaption.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\SearchIt.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\Select.png" />
+    <Content Include="App_Themes\Skin\Pub_Images\test.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\test2.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\test3.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\test4.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\tip.png" />
+    <Content Include="App_Themes\Skin\Pub_Images\tozi.png" />
+    <Content Include="App_Themes\Skin\Pub_Images\True.PNG" />
+    <Content Include="App_Themes\Skin\Pub_Images\True1.PNG" />
+    <Content Include="App_Themes\Skin\Pub_Images\UnChecked.JPG" />
+    <Content Include="App_Themes\Skin\Pub_Images\UnChecked.PNG" />
+    <Content Include="App_Themes\Skin\Pub_Images\UpdateProgress.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\UpdateProgress_2.gif" />
+    <Content Include="App_Themes\Skin\Pub_Images\Upload.png" />
+    <Content Include="Home.aspx" />
+    <Content Include="App_Themes\Skin\default.skin" />
+    <Content Include="Int_Registers\RegDead.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="App_Code\Intd_Lts\Lts_Inherited.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Lts_Inherited.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Master\MainMaster.Master" />
+    <Content Include="bin\Ers_Pro.dll.config" />
+    <Content Include="bin\AjaxControlToolkit.dll.refresh" />
+    <Content Include="bin\AjaxFixedUpdateProgress.dll.refresh" />
+    <Content Include="bin\MaskTextBox.dll.refresh" />
+    <None Include="Properties\PublishProfiles\Ers_Project.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Int_Registers\RegEstates.aspx" />
+    <Content Include="Int_Registers\RegisterHeirs.aspx" />
+    <Content Include="Int_Registers\RegPreControl.aspx" />
+    <Content Include="Int_Cert\Rpt_Pay.aspx" />
+    <Content Include="Master\Ucl_TextDate.ascx" />
+    <Content Include="Script\JavaScript.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\Intd_Cls\Alarm.cs" />
+    <Compile Include="App_Code\Intd_Cls\Tb_Apply.cs" />
+    <Compile Include="App_Code\Intd_Cls\Tb_Person.cs" />
+    <Compile Include="Int_Cert\AccPay.aspx.cs">
+      <DependentUpon>AccPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Int_Cert\AccPay.aspx.designer.cs">
+      <DependentUpon>AccPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Int_Cert\Rpt_Print.aspx.cs">
+      <DependentUpon>Rpt_Print.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Int_Cert\Rpt_Print.aspx.designer.cs">
+      <DependentUpon>Rpt_Print.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Int_Inquiries\Asnad\Inq_Asnad.aspx.cs">
+      <DependentUpon>Inq_Asnad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Int_Inquiries\Asnad\Inq_Asnad.aspx.designer.cs">
+      <DependentUpon>Inq_Asnad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Int_Inquiries\Bank\Inq_Bank.aspx.cs">
+      <DependentUpon>Inq_Bank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Int_Inquiries\Bank\Inq_Bank.aspx.designer.cs">
+      <DependentUpon>Inq_Bank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Int_Inquiries\Asnad\Rpt_InqAsnad.aspx.cs">
+      <DependentUpon>Rpt_InqAsnad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Int_Inquiries\Asnad\Rpt_InqAsnad.aspx.designer.cs">
+      <DependentUpon>Rpt_InqAsnad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Int_Inquiries\Bank\Rpt_Bank.aspx.cs">
+      <DependentUpon>Rpt_Bank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Int_Inquiries\Bank\Rpt_Bank.aspx.designer.cs">
+      <DependentUpon>Rpt_Bank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Int_Inquiries\Company\Inq_Company.aspx.cs">
+      <DependentUpon>Inq_Company.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Int_Inquiries\Company\Inq_Company.aspx.designer.cs">
+      <DependentUpon>Inq_Company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Int_Inquiries\TaxOffice\Inq_TaxOffic.aspx.cs">
+      <DependentUpon>Inq_TaxOffic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Int_Inquiries\TaxOffice\Inq_TaxOffic.aspx.designer.cs">
+      <DependentUpon>Inq_TaxOffic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Int_Inquiries\TaxOffice\Rpt_TaxOffice.aspx.cs">
+      <DependentUpon>Rpt_TaxOffice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Int_Inquiries\TaxOffice\Rpt_TaxOffice.aspx.designer.cs">
+      <DependentUpon>Rpt_TaxOffice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Int_Registers\ApplyFormReg.aspx.cs">
+      <DependentUpon>ApplyFormReg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Int_Registers\ApplyFormReg.aspx.designer.cs">
+      <DependentUpon>ApplyFormReg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\Intd_Cls\Tb_Estate.cs" />
+    <Compile Include="App_Code\Intd_Cls\Tb_Dead.cs" />
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Int_Registers\RegDead.aspx.cs">
+      <DependentUpon>RegDead.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Int_Registers\RegDead.aspx.designer.cs">
+      <DependentUpon>RegDead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\Intd_Lts\Lts_Inherited.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lts_Inherited.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MainMaster.Master.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MainMaster.Master.designer.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Ucl_TextDate.ascx.cs">
+      <DependentUpon>Ucl_TextDate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Ucl_TextDate.ascx.designer.cs">
+      <DependentUpon>Ucl_TextDate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Int_Registers\RegEstates.aspx.cs">
+      <DependentUpon>RegEstates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Int_Registers\RegEstates.aspx.designer.cs">
+      <DependentUpon>RegEstates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Int_Registers\RegisterHeirs.aspx.cs">
+      <DependentUpon>RegisterHeirs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Int_Registers\RegisterHeirs.aspx.designer.cs">
+      <DependentUpon>RegisterHeirs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Int_Registers\RegPreControl.aspx.cs">
+      <DependentUpon>RegPreControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Int_Registers\RegPreControl.aspx.designer.cs">
+      <DependentUpon>RegPreControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Int_Cert\Rpt_Pay.aspx.cs">
+      <DependentUpon>Rpt_Pay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Int_Cert\Rpt_Pay.aspx.designer.cs">
+      <DependentUpon>Rpt_Pay.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Code\Intd_Lts\Lts_Inherited.dbml.layout">
+      <DependentUpon>Lts_Inherited.dbml</DependentUpon>
+    </None>
+    <Content Include="Int_Cert\Rpt_Pay.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Int_Inquiries\Asnad\Rpt_InqAsnad.rdlc" />
+    <EmbeddedResource Include="Int_Inquiries\Bank\Rpt_Bank.rdlc" />
+    <EmbeddedResource Include="Int_Inquiries\TaxOffice\Rpt_TaxOffice.rdlc" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55671</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55671/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

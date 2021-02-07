@@ -1,0 +1,907 @@
+﻿/*-------------------------------GridView-------------------------*/
+.Gvw
+{
+   /*margin:15px 0 10px 0;*/
+   font-size:9pt;
+    margin-top: 0px;
+}
+.Gvw th{
+    font-size:9pt;
+    font-weight:normal;
+    color:#ffffff;
+    height:20px;
+    border-color:#ffffff;
+
+}
+.Gvw td
+{
+    height:20px;
+    font-size:9pt;
+    text-decoration:none;
+    
+}
+.Gvw tr:hover td
+{	
+	color:#ffffff;
+	background-color:#b5b5b5;
+
+}
+
+.Gvw_Footer
+{
+	/*height:10px;*/
+
+	}
+.Gvw_Footer tr:hover td
+{	
+	
+}
+.Gvw_RowStyle 
+{
+	}
+	
+	.Gvw_RowStyle1 
+{
+}
+.Gvw_Select
+{
+}
+
+.Gvw_ContainerDiv
+{
+    border: 1px groove #000000; width: 400px; height:170px; overflow:scroll; padding-left:20px;
+}
+.Gvw_Div
+{
+    width: 98%; height:170px; overflow:scroll; padding-left:20px;
+}
+
+/*------------------------------------TextBox----------------------------*/
+.normal_TextBox
+ {
+	border: 1px solid #6699cc;
+	width:170px;
+		font-family:Tahoma;
+		font-size:9pt;
+		background-color:#fdfde9;
+	/*border-color:#999999;*/
+		height:17px;
+	margin-left:50px;
+		margin-bottom:3px;		
+}  
+.Txt_Date
+ {
+	border: 1px solid #6699cc;
+	width:145px;
+	font-family:Tahoma;
+	font-size:9pt;
+	background-color:white;
+	/*border-color:#999999;*/
+    height:17px;
+	margin-left:50px;
+	margin-bottom:3px;	
+    background-image: url('../../App_Themes/Skin/Pub_Images/calc_icon.jpg');
+    background-position-x:left;
+    background-repeat:no-repeat;
+    padding-left:25px;
+    
+}  
+ .normal_TextBox1
+ {
+	border: 1px solid #6699cc;
+	width:170px;
+		font-family:Tahoma;
+		font-size:9pt;
+		background-color:#fdfde9;
+	/*border-color:#999999;*/
+		height:17px;
+		margin-bottom:3px;		
+}  
+.Equipment_Mini_TextBox
+ {
+	width:150px;
+	font-family:Tahoma;
+	font-size:9pt;
+	background-color:#fdfde9;
+	border-style:solid;
+	border-width:1px;
+	/*border-color:#999999;*/
+	border-color:#6699cc;
+	height:17px;
+	margin-left:4px;
+	margin-bottom:3px;
+	
+	
+}   
+
+.address_TextBox
+{
+    width:550px;
+	border: 1px solid #6699cc;
+    font-family:Tahoma;
+	font-size:9pt;
+	background-color:#fdfde9;
+	direction:rtl;
+	text-align:right;
+	margin-left:50px;
+	margin-bottom:3px;
+}
+.address_TextBox2
+{
+	width:535px;
+	font-family:Tahoma;
+	font-size:9pt;
+	background-color:#fdfde9;
+	border-style:solid;
+	border-width:1px;
+	border-color:#6699cc;
+	height:17px;
+	direction:rtl;
+	text-align:right;
+	margin-left:50px;
+	margin-bottom:3px;
+}
+.test1
+{
+	width:500px;
+}
+.MtoolName_DropDownList
+{
+	width:540px;
+	font-family:Tahoma;
+	font-size:9pt;
+	background-color:#fdfde9;
+	border-style:solid;
+	border-width:1px;
+	border-color:#6699cc;
+	direction:rtl;
+	text-align:right;
+	margin-left:50px;
+	margin-bottom:3px;
+}
+/*----------------------dropdownlist----------------------*/
+.normal_DropDownList
+{
+	Width:174px;
+	font-size:9pt;
+	font-family:Tahoma;
+	height:20px;
+	margin-left:50px;
+	background-color:#fdfde9;
+	margin-bottom:3px;
+	
+}
+.Short_DropDownList
+{
+	Width:100px;
+	font-size:9pt;
+	font-family:Tahoma;
+	height:20px;
+	
+	background-color:#fdfde9;
+	margin-bottom:3px;
+	
+}
+
+.normal_DropDownList_Flowchart
+{
+	Width:174px;
+	font-size:9pt;
+	font-family:Tahoma;
+	height:20px;
+	
+	background-color:#fdfde9;
+	margin-bottom:3px;
+	
+}
+
+/*---------------------------------FontTd----------------------*/
+input 
+{
+	font-family : tahoma, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	}
+select 
+{
+	font-family : tahoma, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+    margin-right: 0px;
+}
+/*-----------------------------------Table-------------------------*/
+.table
+{
+	Width:100%;
+}
+.table_Shdpnl
+{
+	background-color:White;
+	Width:100%;
+	padding-right:10px;
+}
+.table_Shdpnl1
+{
+	background-color:White;
+	padding-right:10px;
+}
+/*--------------------------------LableTd-------------------------*/
+.label	
+{
+height:20px;
+padding-left:30px;
+text-align:right;
+width:110px;
+margin-bottom:3px;
+
+}
+.label_Search {
+    height: 20px;
+    text-align: right;
+    width: 175px;
+    margin-bottom: 3px;
+    padding-left: 50px;
+}
+.lable_valid:hover
+{
+	background-color:#D3ECFD;
+}
+
+.lable_valid
+{
+	height:20px;
+	padding-left:30px;
+	text-align:right;
+	width:110px;
+	background-image: url('../../App_Themes/Skin/Pub_Images/alert.png');
+	background-repeat: no-repeat;
+	background-position:5px 7px;
+	margin-bottom:3px;
+}
+
+.Wait
+{
+    height: 30px;
+    width: 30px;
+}
+.label_Static {
+    border-bottom: 1px solid #DBDBDB;
+    color: #333333;
+    text-align: right;
+    background-color: #f6f6f6;
+    margin-bottom: 3px;
+}
+
+.label_StaticAddress
+{
+color:#333333;
+padding-left:5px;
+text-align:right;
+margin-left:15px;
+background-color:#f6f6f6;
+padding-right:10px;
+border-bottom-style:solid;
+border-bottom-color:#DBDBDB;
+border-bottom-width:1px;	
+margin-bottom:3px;
+}
+/*Ss_SECURITY*/
+.label_Static2	
+{
+color:#333333;
+padding-left:40px;
+text-align:right;
+}
+.Lbl_DoneDate_StepDoUp
+{
+    padding-right: 110px;
+}
+.Tr_DataStepDoUp
+{
+    padding:5px 0px 5px 0px;
+}
+/*------------CaptionTd--------------------------------*/
+.caption
+{
+	color:#cc3300;
+	white-space:nowrap;
+	padding-left:10px;
+	background-image:url('Pub_Images/img31.png');
+	background-repeat:no-repeat;
+	background-position:right;
+	padding-right:10px;
+
+	
+}
+
+
+/*----------------------CheckBoxList----------------------*/
+
+.CheckBoxList
+{
+	padding-right:30px;
+	line-height:50px;
+}
+
+
+		
+	/*.box {
+	background-image: url('../../App_Themes/Skin/Pub_Images/login.png');
+	background-repeat: no-repeat;
+	height: 290px;
+	width: 470px;
+	
+}*/
+
+/*SS_Tamarkoz(forushani)*/
+
+/*SS_Tamarkoz(forushani)*/
+
+/*----------------TextDatePicker--------------------*/
+.Calender
+{
+width:152px;
+height:15px;
+text-align:right;
+direction:rtl;
+}
+
+/*-------------------------button-----------------------------*/
+.BtnLocation
+ {
+width:50%;
+text-align:left;
+margin-left:20px;
+}
+.btn-tbl
+{
+margin-top:10px;
+float:right;
+width:677px;
+padding-bottom:5px;
+	margin-left: 0px;
+}
+
+.btn-td
+{
+	width: 80px;
+	height: 22px;
+	padding-right:5px;
+	
+}	
+/*-------------------btnPrint------------------------------------*/
+.btn-print
+{
+	background-image: url('Pub_Images/btn7a.gif');
+	background-position:right;
+	background-repeat: no-repeat;
+	width: 80px;
+	height: 22px;
+	padding-right:30px;
+	vertical-align:middle;
+	color:#555555;
+	text-align:right;
+	font-size:9pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+	padding-bottom:4px;
+	margin-bottom: 0px;
+}	
+
+
+.btn-print:hover 
+{
+	background-image: url('../../App_Themes/Skin/Pub_Images/btn7b.gif');
+	background-repeat: no-repeat;
+	background-position:right;
+	width: 80px;
+	height: 22px;
+	padding-right:30px;
+	color:#cc0000;
+	text-align:right;
+	font-size:9pt;
+	border-style:none;
+	border-width:0px;
+}	
+
+/*-------------------btnSearch------------------------------------*/
+.btn-search
+{
+	background-image: url('Pub_Images/btn6a.gif');
+	background-position:right;
+	background-repeat: no-repeat;
+	width: 80px;
+	height: 22px;
+	padding-right:30px;
+	vertical-align:middle;
+	color:#555555;
+	text-align:right;
+	font-size:9pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+	padding-bottom:4px;
+	margin-bottom: 0px;
+}	
+
+
+.btn-search:hover 
+{
+	background-image: url('../../App_Themes/Skin/Pub_Images/btn6b.gif');
+	background-repeat: no-repeat;
+	background-position:right;
+	width: 80px;
+	height: 22px;
+	padding-right:30px;
+	color:#cc0000;
+	text-align:right;
+	font-size:9pt;
+	border-style:none;
+	border-width:0px;
+}	
+
+/*-------------------btnSave------------------------------------*/
+.btn-save
+{
+	background-image: url('Pub_Images/btn1a.gif');
+	background-position:right;
+	background-repeat: no-repeat;
+	width: 80px;
+	height: 22px;
+	padding-right:30px;
+	vertical-align:middle;
+	color:#555555;
+	text-align:right;
+	font-size:9pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+	padding-bottom:4px;
+}	
+
+.btn-save:hover 
+{
+	background-image: url('../../App_Themes/Skin/Pub_Images/btn1b.gif');
+	background-repeat: no-repeat;
+	background-position:right;
+	width: 80px;
+	height: 22px;
+	padding-right:30px;
+	color:#cc0000;
+	text-align:right;
+	font-size:9pt;
+	border-style:none;
+	border-width:0px;
+	
+}
+/*--------------------btnUpload-----------------------------*/
+.btn-Upload
+{
+	background-image: url('Pub_Images/btn9a.gif');
+	background-position:right;
+	background-repeat: no-repeat;
+	width: 80px;
+	height: 22px;
+	padding-right:15px;
+	vertical-align:middle;
+	color:#555555;
+	text-align:right;
+	font-size:9pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+	padding-bottom:4px;
+}	
+
+.btn-Upload:hover 
+{
+	background-image: url('../../App_Themes/Skin/Pub_Images/btn9b.gif');
+	background-repeat: no-repeat;
+	background-position:right;
+	width: 80px;
+	height: 22px;
+	padding-right:15px;
+	color:#cc0000;
+	text-align:right;
+	font-size:9pt;
+	border-style:none;
+	border-width:0px;
+	
+}
+/*-------------------btnCancel------------------------------------*/
+.btn-Cancel
+{
+	background-image: url('Pub_Images/btn3a.gif');
+	background-position:right;
+	background-repeat: no-repeat;
+	width: 80px;
+	height:22px;
+	padding-right:30px;
+	vertical-align:middle;
+	color:#555555;
+	text-align:right;
+	font-size:9pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+	padding-bottom:4px;
+}	
+
+.btn-Cancel:hover 
+{
+	background-image: url('../../App_Themes/Skin/Pub_Images/btn3b.gif');
+	background-repeat: no-repeat;
+	background-position:right;
+	width: 80px;
+	height: 22px;
+	padding-right:30px;
+	color:#cc0000;
+	text-align:right;
+	font-size:9pt;
+	border-style:none;
+	border-width:0px;
+	
+	
+}		
+
+.btn-return 
+{
+	background-image: url('Pub_Images/btn_Return2.GIF');
+	background-position:right;
+	background-repeat: no-repeat;
+	width: 80px;
+	height: 22px;
+	padding-right:30px;
+	vertical-align:middle;
+	color:#555555;
+	text-align:right;
+	font-size:9pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+	padding-bottom:4px;
+}
+.btn-return:hover
+{
+	background-image: url('../../App_Themes/Skin/Pub_Images/btn1R.gif');
+	background-repeat: no-repeat;
+	background-position:right;
+	width: 80px;
+	height: 22px;
+	padding-right:30px;
+	color:#cc0000;
+	text-align:right;
+	font-size:9pt;
+	border-style:none;
+	border-width:0px;
+}
+.btn-catablcount
+{
+    background-image:url('../../App_Themes/Skin/Images/btn_cartablCount.png');
+    border:none;
+    cursor:pointer;
+    background-color: White;
+}		
+/*-------------------Lbt-Download------------------------------------*/
+.Lbt-Download
+{
+	background-image: url('../../App_Themes/Skin/Pub_Images/download.gif');
+	background-position:right;
+	background-repeat: no-repeat;
+	height: 22px;
+	width: 80px;
+	padding-right:0px;
+	vertical-align:middle;
+	color:#555555;
+	text-align:center;
+	font-size:9pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+	padding-bottom:4px;	 
+}	
+/*-------------------btnPublic------------------------------------*/
+.btn-Public
+{
+	background-image: url('../../App_Themes/Skin/Pub_Images/public-a.gif');
+	background-position:right;
+	background-repeat: no-repeat;
+	height: 22px;
+	width: 80px;
+	padding-right:0px;
+	vertical-align:middle;
+	color:#555555;
+	text-align:center;
+	font-size:9pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+	padding-bottom:4px;
+	 
+}	
+
+.btn-Public:hover 
+{
+	background-image: url('../../App_Themes/Skin/Pub_Images/public-b.gif');
+	background-repeat: no-repeat;
+	background-position:right;
+	height: 22px;
+	width: 80px;
+	padding-right:0px;
+	color:#cc0000;
+	text-align:center;
+	font-size:9pt;
+	border-style:none;
+	border-width:0px;
+	padding-bottom:4px;
+	
+}
+
+
+
+
+
+
+	
+/*-------------------btnPublic 2------------------------------------*/
+.btn-Public2
+{
+	background-image: url('../../App_Themes/Skin/Pub_Images/public-2a.gif');
+	background-position:right;
+	background-repeat: no-repeat;
+	height: 22px;
+	width: 100px;
+	padding-right:0px;
+	vertical-align:middle;
+	color:#555555;
+	text-align:center;
+	font-size:9pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+	padding-bottom:4px;
+	 
+}	
+
+.btn-Public2:hover 
+{
+	background-image: url('../../App_Themes/Skin/Pub_Images/public-2b.gif');
+	background-repeat: no-repeat;
+	background-position:right;
+	height: 22px;
+	width: 100px;
+	padding-right:0px;
+	color:#cc0000;
+	text-align:center;
+	font-size:9pt;
+	border-style:none;
+	border-width:0px;
+	padding-bottom:4px;
+	
+}	
+/*-------------------btnPublic 3------------------------------------*/
+.btn-Public3
+{
+	background-image: url('../../App_Themes/Skin/Pub_Images/public-3a.gif');
+	background-position:right;
+	background-repeat: no-repeat;
+	height: 22px;
+	width: 130px;
+	padding-right:0px;
+	vertical-align:middle;
+	color:#555555;
+	text-align:center;
+	font-size:9pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+	padding-bottom:4px;
+	 
+}	
+.btn-Public3:hover 
+{
+	background-image: url('../../App_Themes/Skin/Pub_Images/public-3b.gif');
+	background-repeat: no-repeat;
+	background-position:right;
+	height: 22px;
+	width: 130px;
+	padding-right:0px;
+	color:#cc0000;
+	text-align:center;
+	font-size:9pt;
+	border-style:none;
+	border-width:0px;
+	padding-bottom:4px;
+	
+}	
+/*-------------------btnPublic 4------------------------------------*/
+.btn-Public4
+{
+	background-image: url('../../App_Themes/Skin/Pub_Images/public-4a.gif');
+	background-position:right;
+	background-repeat: no-repeat;
+	height: 22px;
+	width: 180px;
+	padding-right:0px;
+	vertical-align:middle;
+	color:#555555;
+	text-align:center;
+	font-size:9pt;
+	border-style:none;
+	border-width:0px;
+	cursor:pointer;
+	padding-bottom:4px;
+	 
+}	
+.btn-Public4:hover 
+{
+	background-image: url('../../App_Themes/Skin/Pub_Images/public-4b.gif');
+	background-repeat: no-repeat;
+	background-position:right;
+	height: 22px;
+	width: 180px;
+	padding-right:0px;
+	color:#cc0000;
+	text-align:center;
+	font-size:9pt;
+	border-style:none;
+	border-width:0px;
+	padding-bottom:4px;
+	
+}	
+
+
+
+/*--------------------------Btn_Expand-------------------------------------*/
+.Btn_Expand
+{
+  height:20px;
+  width:20px;
+}	
+/*---------------------Td----------------------------------*/
+.hr
+{	width:100%;
+ 
+}
+.line
+{
+	background-image:url('../../App_Themes/Skin/Pub_Images/caption-bg.gif');
+	background-repeat: repeat-x;
+	height: 25px;
+	width:100%;
+	}
+	.m_line
+{
+	background-image:url('../../App_Themes/Skin/Pub_Images/caption-bg2.gif');
+	background-repeat: repeat-x;
+	height: 5px;
+	width:100%;
+}
+	
+	
+	.lineTest
+{
+	background-image:url('../../App_Themes/Skin/Pub_Images/caption-bg.gif');
+	background-repeat: repeat-x;
+	height: 25px;
+	width:200px;
+	
+	}
+.Calender-td
+{
+padding-left:51px;
+margin-left:50px;
+padding-bottom:3px;
+}
+.FormCaption
+{
+	/*background-image:url('../../App_Themes/Skin/Pub_Images/grid-hdr.gif');
+	background-repeat:repeat-x; */
+	background-color:#A1E7BD;
+	text-align:center;
+	color:#000000;
+	height:25px;
+	font-size:10pt;
+     border-bottom:5px;
+     border-bottom-style:solid;
+      border-bottom-color:White;
+}
+.SearchCaption
+{
+	/*background-image:url('../../App_Themes/Skin/Pub_Images/searchcaption.gif'); 
+	background-repeat:repeat-x;*/
+	background-color:#ebd74f;
+	text-align:center;
+	color:#000000;
+	height:25px;
+	font-size:10pt;
+	
+	
+}
+.Search-td
+{
+	background-color:#ffffff;
+	width:100%;
+	margin-bottom:0px;
+}
+/*----------------------------menu-----------------------------*/
+.Menu_Pic
+{
+	background-image:url('../../App_Themes/Skin/Pub_Images/grid-hdr.gif');
+	
+}
+/* ----------------------------------------fieldset,Legend------------------------*/
+.fieldsetout
+{
+
+vertical-align: middle;
+
+}
+.fieldsetIn
+{
+	vertical-align: middle;
+   margin-bottom:10px;
+}
+.legendIn
+{
+	vertical-align: top; color: #006600; font-size:8pt;font-family:Tahoma;
+	
+}
+.legendout
+{
+		vertical-align: top; color: #006600; font-size:9pt;font-family:Tahoma;
+
+}
+/*ّFor Dropdown in Step Do up User Control*/
+.Larg_DropDownList_Res
+{
+	Width:280px;
+	font-size:9pt;
+	font-family:Tahoma;
+	height:20px;
+	margin-left:50px;
+	background-color:#fdfde9;
+	margin-bottom:3px;
+	
+}
+.Larg_List_Res
+{
+Width:280px;
+	font-size:9pt;
+	font-family:Tahoma;
+	margin-left:50px;
+	background-color:#fdfde9;
+	margin-bottom:3px;
+}
+/*-----------------------div_StepDoup------------------------*/
+.dv_StepDoup
+{
+	width:450px;
+	overflow:scroll;
+	
+}
+/*------------- dsl_SelectedusageType-----------------------------*//**Adrenaline
+.dsl_SelectedUsageType
+{
+	height:20px;
+	padding-left:30px;
+	text-align:right;
+	width:110px;
+	background-position:5px 7px;
+	margin-bottom:3px;
+}
+.Div_Scroll
+{ border: 1px groove #000000; 
+  width: 350px; 
+  height: 312px;  
+  overflow-y: scroll;
+  padding-left: 20px;
+
+     }  
+     	
+.Div_Scroll_Group
+{ border: 1px groove #000000; 
+  width: 350px; 
+  height: 100px;  
+  overflow-y: scroll;
+  padding-left: 20px;
+     }*/  

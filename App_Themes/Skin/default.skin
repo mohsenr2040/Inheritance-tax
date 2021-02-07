@@ -1,0 +1,168 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" /> 
+--%>
+<asp:GridView runat="server" SkinId="Mto_Gvw" CssClass="Gvw"  CellPadding="4" ForeColor="#333333"
+                       Width="100%" GridLines=None EmptyDataText="اطلاعاتی برای نمایش یافت نشد" >
+                       <EmptyDataRowStyle BackColor="Yellow" Font-Names="Tahoma" Font-Italic="true" BorderColor="#ff0000" BorderWidth="2px" ForeColor="#ff0000"  />
+                        <HeaderStyle HorizontalAlign="Center"  CssClass="Gvw"   BackColor="#6699ff" ForeColor="#ffffff" />
+                        <RowStyle  CssClass="Gvw_RowStyle" BackColor="#f4f4f4"  HorizontalAlign="Center" ForeColor="#252525"   />
+                        <PagerStyle  CssClass="Gvw_Footer" ForeColor="#ffffff" HorizontalAlign="Center" BackColor="#6699ff" />
+                        <SelectedRowStyle  ForeColor="#ff0000" BackColor="#faee8c" CssClass="Gvw_Select" />
+                        <EditRowStyle BackColor="#FFCC66" />
+                        <AlternatingRowStyle CssClass="Gvw_RowStyle1" BackColor="#ffffff" ForeColor="#252525"  />
+                         <%-- 
+                        <FooterStyle BackColor="#507CD1" CssClass="Gvw" Font-Bold="True" ForeColor="White"   />
+                         --%>
+                        </asp:GridView>
+                        
+<asp:GridView runat="server" SkinId="dr_Gvw" CssClass="Gvw"  CellPadding="4" ForeColor="#333333" 
+                        GridLines=None EmptyDataText="اطلاعاتی برای نمایش یافت نشد" >
+                       <EmptyDataRowStyle BackColor="Yellow" Font-Names="Tahoma" Font-Italic="true" BorderColor="#ff0000" BorderWidth="2px" ForeColor="#ff0000"  />
+                        <HeaderStyle HorizontalAlign="Center"  CssClass="Gvw"   BackColor="#5bacff" ForeColor="#ffffff" />
+                        <RowStyle  CssClass="Gvw_RowStyle"  HorizontalAlign="Center" ForeColor="#252525"   />
+                        <PagerStyle  CssClass="Gvw_Footer" ForeColor="#ffffff" HorizontalAlign="Center" BackColor="#5bacff" />
+                        <SelectedRowStyle  ForeColor="#ff0000" BackColor="#faee8c" CssClass="Gvw_Select" />
+                        <EditRowStyle BackColor="#FFCC66" />
+                        <AlternatingRowStyle CssClass="Gvw_RowStyle1" BackColor="#f4f4f4" ForeColor="#252525"  />
+                         <%-- 
+                        <FooterStyle BackColor="#507CD1" CssClass="Gvw" Font-Bold="True" ForeColor="White"   />
+                         --%>
+                        </asp:GridView>
+                        
+ 
+<%-- -----------------------------ImageButtons --------------------------------------%>
+
+<asp:ImageButton   runat="server" AlternateText="انصراف"  ImageUrl="~/App_Themes/Skin/Pub_Images/btn_Cancel.gif" ToolTip="انصراف"  SkinId="Ibtn_Cancel" />  
+  <asp:ImageButton runat="server"  AlternateText="جستجو"  ImageUrl="~/App_Themes/Skin/Pub_Images/btn_Search.gif" ToolTip="جستجو" SkinId="Btn_Search" /> 
+
+<asp:ImageButton   runat="server" AlternateText="حذف" ImageUrl="~/App_Themes/Skin/Pub_Images/btnDel.gif" ToolTip="حذف" SkinId="Ibtn_Del" />
+<asp:ImageButton   runat="server" AlternateText="ویرایش" ImageUrl="~/App_Themes/Skin/Pub_Images/BtnEdit.gif" ToolTip="ویرایش" SkinId="Ibtn_Edit" />
+
+<asp:ImageButton  runat="server" AlternateText="جستجوی فیلدی"  ImageUrl="~/App_Themes/Skin/Pub_Images/SearchIt.gif" ToolTip="جستجوی فیلدی" SkinId="Ibtn_SearchIt"  />
+<asp:ImageButton runat="server" AlternateText="ذخیره" ImageUrl="~/App_Themes/Skin/Pub_Images/btn_Save.gif" ToolTip="ذخیره" SkinId="Ibtn_Ins" /> 
+<asp:ImageButton runat="server" AlternateText="بازگشت" ImageUrl="~/App_Themes/Skin/Pub_Images/btn_Return.gif" ToolTip="بازگشت" SkinId="Ibtn_Return" />
+<asp:ImageButton runat="server"  AlternateText="اضافه نمودن"  ImageUrl="~/App_Themes/Skin/Pub_Images/Btn_Add.gif" ToolTip="اضافه نمودن" SkinId="Btn_Add" /> 
+<asp:ImageButton runat="server"  AlternateText="انتخاب از لیست"  ImageUrl="~/App_Themes/Skin/Pub_Images/Details.gif" ToolTip="انتخاب از لیست" SkinId="Btn_Details" /> 
+<asp:ImageButton runat="server"  AlternateText="بستن کادر"  ImageUrl="~/App_Themes/Skin/Pub_Images/CloseShadow.gif" ToolTip="بستن کادر" SkinId="Btn_CloseShadow" /> 
+<asp:ImageButton runat="server"  AlternateText="انتخاب"  ImageUrl="~/App_Themes/Skin/Pub_Images/Select.PNG" ToolTip="انتخاب" SkinId="IBtn_Select" /> 
+<asp:ImageButton runat="server"  AlternateText="ویرایش"  ImageUrl="~/App_Themes/Skin/Pub_Images/Btn_Edit.gif" ToolTip="ویرایش" SkinId="Btn_EditMode" /> 
+ <asp:ImageButton   runat="server" AlternateText="ورود"    ImageUrl="~/App_Themes/Skin/Pub_Images/btn_Enter.gif" style="margin-left:10px" ToolTip="ورود به سیتم"   SkinId="Ibtn_Enter" /> 
+<asp:ImageButton   runat="server" AlternateText="دانلود"    ImageUrl="~/App_Themes/Skin/Pub_Images/Download.gif" ToolTip="دانلود"   SkinId="Ibtn_Download" /> 
+<asp:ImageButton   runat="server" AlternateText="ارسال"    ImageUrl="~/App_Themes/Skin/Pub_Images/btn_send.gif" ToolTip="ارسال"   SkinId="Ibtn_Upload" /> 
+<asp:ImageButton SkinId="Ibtn_NewLevel" runat="server" ImageUrl="~/App_Themes/Skin/Pub_Images/NextLevel.gif" />
+<asp:ImageButton SkinId="Ibtn_InsertNode" runat="server" ImageUrl="~/App_Themes/Skin/Pub_Images/Insert_Node.gif" />
+<asp:ImageButton SkinId="Ibtn_DelNode" runat="server" ImageUrl="~/App_Themes/Skin/Pub_Images/Del_Node.gif" />
+<asp:ImageButton SkinId="Ibtn_DelFromList" runat="server" ImageUrl="~/App_Themes/Skin/Pub_Images/24.gif" />
+<asp:ImageButton SkinId="Ibtn_AddToList" runat="server" ImageUrl="~/App_Themes/Skin/Pub_Images/25.gif" />
+<asp:ImageButton SkinId="Ibtn_Report" runat="server" ImageUrl="~/App_Themes/Skin/Pub_Images/btn7b1.gif" />
+<asp:ImageButton SkinId="Ibtn_New_Rep" runat="server" ImageUrl="~/App_Themes/Skin/Pub_Images/btn8b.gif" />
+<asp:ImageButton   runat="server" AlternateText="ابطال" ImageUrl="~/App_Themes/Skin/Pub_Images/False1.PNG" ToolTip="ابطال" SkinId="Ibtn_Revoke" />
+
+
+
+<%-------------------------------------IMAGES-----------------------------------------%>
+
+    <asp:Image  runat="server" AlternateText="توجه" ImageUrl="~/App_Themes/Skin/Pub_Images/tip.png" ToolTip="توجه" SkinId="Tip"/>
+    <asp:Image  runat="server" AlternateText="در حال بار گذاری" ImageUrl="~/App_Themes/Skin/Pub_Images/UpdateProgress.gif" ToolTip="در حال بار گذاری" SkinId="UpdateProgress"/>
+    <asp:Image  runat="server" AlternateText="درست" ImageUrl="~/App_Themes/Skin/Pub_Images/True.png" ToolTip="درست" SkinId="True"/>
+    <asp:Image  runat="server" AlternateText="غلط" ImageUrl="~/App_Themes/Skin/Pub_Images/False.png" ToolTip="غلط" SkinId="False"/>
+    
+<%-------------------------------------HyperLinks-----------------------------------------%>
+   <asp:HyperLink  runat="server" ImageUrl="~/App_Themes/Skin/Pub_Images/Entry.gif" ToolTip="ثبت نتیجه" SkinId="Hplnk_Entry"/>
+  <asp:HyperLink  runat="server" ImageUrl="~/App_Themes/Skin/Pub_Images/Print.gif" ToolTip="چاپ" SkinId="Hplnk_Print"/>
+  <asp:HyperLink  runat="server" ImageUrl="~/App_Themes/Skin/Pub_Images/EmptyPrint.gif" ToolTip="چاپ" SkinId="Hplnk_EmptyPrint"/>
+  <asp:HyperLink  runat="server" ImageUrl="~/App_Themes/Skin/Pub_Images/FullPrint.gif" ToolTip="چاپ" SkinId="Hplnk_FullPrint"/>
+  <asp:HyperLink  runat="server" ImageUrl="~/App_Themes/Skin/Pub_Images/OnlyPrint.gif" ToolTip="چاپ" SkinId="Hplnk_OnlyPrint"/>
+  <asp:HyperLink  runat="server" ImageUrl="~/App_Themes/Skin/Pub_Images/DownloadIt.png" ToolTip="دانلود" SkinId="Hplnk_DownloadIt"/>
+  <asp:HyperLink  runat="server" ImageUrl="~/App_Themes/Skin/Pub_Images/Upload.png" ToolTip="ارسال فایل" SkinId="Hplnk_Upload"/>
+  
+  
+  <%-------------------------------------public Skin------------------%>
+  
+    <asp:Label SkinId="Lbl_Normal" runat="server" CssClass="label_Static" Width="175px" height="20"></asp:Label>
+    <asp:Label SkinId="Lbl_Normal_adress" runat="server" CssClass="label_StaticAddress" Width="430"  height="20"></asp:Label>
+
+
+ <%--
+  <asp:ImageButton runat="server"  AlternateText="انصراف"  ImageUrl="~/App_Themes/Public/Pub_Images/btn_Cancel.gif" ToolTip="انصراف" SkinId="Ibtn_Cancel" /> 
+  <asp:ImageButton runat="server" AlternateText="ذخیره" ImageUrl="~/App_Themes/Public/Pub_Images/btn_Save.gif" ToolTip="ذخیره" SkinId="Ibtn_Ins" /> 
+  <asp:ImageButton runat="server" AlternateText="ویرایش" ImageUrl="~/App_Themes/Public/Pub_Images/BtnEdit.gif" ToolTip="ویرایش" SkinId="Ibtn_Edit" />
+  
+  <asp:ImageButton runat="server" AlternateText="اعمال تغییرات" ImageUrl="~/App_Themes/Public/Pub_Images/True.PNG" ToolTip="اعمال تغییرات" SkinId="Ibtn_Accept" />
+  <asp:ImageButton runat="server" AlternateText="رد تغییرات" ImageUrl="~/App_Themes/Public/Pub_Images/False.PNG" ToolTip="رد تغییرات" SkinId="Ibtn_Ignor" />
+  
+  <asp:ImageButton  runat="server"  ImageUrl="~/App_Themes/Public/Pub_Images/BtnDel.gif"   ToolTip="حذف" SkinId="Ibtn_Del" />
+  <asp:ImageButton runat="server" AlternateText="بازگشت" ImageUrl="~/App_Themes/Public/Pub_Images/btn_Return.gif" ToolTip="بازگشت" SkinId="Ibtn_Return" />
+  <asp:ImageButton runat="server"  AlternateText="اضافه نمودن"  ImageUrl="~/App_Themes/Public/Pub_Images/Btn_Add.gif" ToolTip="اضافه نمودن" SkinId="Btn_Add" /> 
+  <asp:ImageButton runat="server"  AlternateText="جستجو"  ImageUrl="~/App_Themes/Public/Pub_Images/btn_Search.gif" ToolTip="جستجو" SkinId="Btn_Search" /> 
+
+
+    <asp:Image  runat="server" AlternateText="توجه" ImageUrl="~/App_Themes/Public/Pub_Images/tip.png" ToolTip="توجه" SkinId="Tip"/>
+    <asp:Image  runat="server" AlternateText="در حال بار گذاری" ImageUrl="~/App_Themes/Public/Pub_Images/UpdateProgress.gif" ToolTip="در حال بار گذاری" SkinId="IMG_UpdateProgress"/>
+    <asp:Label SkinId="Lbl_UpdateProgress" runat="server" Text="لطفا چند لحظه صبر کنید...."></asp:Label>--%>
+    
+  <%-------------------------------------salebranch------------------%>
+   
+  
+<%--<asp:TextBox  AutoCompleteType="Disabled" Width="140" CssClass="TextBox" SkinId="Standard_Txt" runat="server"/>
+<asp:TextBox  AutoCompleteType="Disabled" CssClass="TextBox" runat="server" Height="80px" SkinId="Desc_Txt" Width="445px" />
+  <asp:ImageButton runat="server"  AlternateText="انصراف"  ImageUrl="~/App_Themes/Public/Pub_Images/btn_Cancel.gif" ToolTip="انصراف" SkinId="Ibtn_Cancel" /> 
+
+<asp:TextBox  AutoCompleteType="Disabled" Width="140" CssClass="Txt_Style" SkinId="Standard_Style" runat="server"   />
+<asp:TextBox  AutoCompleteType="Disabled" CssClass="Txt_Style" runat="server" Height="80px" SkinId="Desc_Style" Width="400px" />
+
+
+<asp:DropDownList  runat="server" CssClass="DropDownlist" SkinId="Min_Ddlst"  Width="110"/>
+<asp:DropDownList  runat="server" CssClass="DropDownlist" SkinId="Medium_Ddlst"  Width="135" />
+<asp:DropDownList  runat="server" CssClass="DropDownlist" SkinId="Larg_Ddlst"  Width="145" />
+
+  <asp:Panel  SkinId="Sal_Pnl" BackColor="Transparent" CssClass="Panel" runat="server" />  
+  
+  <asp:ImageButton   runat="server" ImageUrl="~/App_Themes/Public/Pub_Images/btn_Cancel.gif"  SkinId="Ibtn_Cancel" /> 
+    <asp:ImageButton runat="server" AlternateText="حذف" ImageUrl="~/App_Themes/Public/Pub_Images/btn_Save.gif" ToolTip="ذخیره" SkinId="Ibtn_Ins" /> 
+  <asp:ImageButton runat="server" AlternateText="حذف" ImageUrl="~/App_Themes/Public/Pub_Images/BtnDel.gif" ToolTip="حذف" SkinId="Ibtn_Del" />
+  <asp:ImageButton runat="server" AlternateText="ویرایش" ImageUrl="~/App_Themes/Public/Pub_Images/BtnEdit.gif" ToolTip="ویرایش" SkinId="Ibtn_Edit" />--%>
+  
+ 
+  <%-------------------------------------security------------------%>
+
+
+<%--
+<asp:TextBox  AutoCompleteType="Disabled" Width="160px" SkinId="Standard_Txt" runat="server"/>
+<asp:TextBox  AutoCompleteType="Disabled" CssClass="TextBox" runat="server" Height="80px" SkinId="Desc_Txt" Width="445px" />
+
+<asp:DropDownList  runat="server" CssClass="DropDownlist" SkinId="Min_Ddlst"  Width="110px"/>
+<asp:DropDownList  runat="server" CssClass="DropDownlist" SkinId="Medium_Ddlst"  Width="135px" />
+<asp:DropDownList  runat="server" CssClass="DropDownlist" SkinId="Larg_Ddlst"  Width="160px" />
+
+  <asp:Panel  SkinId="Sal_Pnl" BackColor="Transparent" CssClass="Panel" runat="server" />  
+   <asp:ImageButton   runat="server" AlternateText="ثبت"    ImageUrl="../Public/Pub_Images/btn_Save.gif" ToolTip="ثبت"   SkinId="Ibtn_Save" /> 
+    <asp:ImageButton   runat="server" AlternateText="ایجاد نقش"    ImageUrl="../Public/Pub_Images/btn19b.gif" ToolTip="ایجاد نقش"   SkinId="Ibtn_CreateRole" /> 
+    <asp:ImageButton   runat="server" AlternateText="حذف نقش"    ImageUrl="../Public/Pub_Images/btn20b.gif" ToolTip="حذف نقش"   SkinId="Ibtn_DeleteRole" /> 
+    <asp:ImageButton   runat="server" AlternateText="بازگشت"    ImageUrl="../Public/Pub_Images/14.gif" ToolTip="بازگشت"   SkinId="Btn_Return" /> 
+   <asp:ImageButton   runat="server" AlternateText="ورود"    ImageUrl="../Public/Pub_Images/btn_Enter.gif" style="margin-left:10px" ToolTip="ورود به سیتم"   SkinId="Ibtn_Enter" /> 
+   <asp:ImageButton   runat="server" AlternateText="تغییر رمز عبور" ToolTip="تغییر رمز عبور" ImageUrl="../Public/Pub_Images/btn18b.gif" SkinId="Ibtn_ChangePassword" />
+  <asp:ImageButton   runat="server" AlternateText="انصراف"  ImageUrl="../Public/Pub_Images/btn_Cancel.gif" ToolTip="انصراف"  SkinId="Ibtn_Cancel" />  
+  <asp:ImageButton   runat="server" AlternateText="جستجو"  ImageUrl="../Public/Pub_Images/btn_Search.gif" ToolTip="جستجو"  SkinId="Ibtn_search" /> 
+  <asp:ImageButton runat="server" AlternateText="حذف" ImageUrl="../Public/Pub_Images/BtnDel.gif" ToolTip="حذف" SkinId="Ibtn_Del" />
+  <asp:ImageButton runat="server" AlternateText="ویرایش" ImageUrl="../Public/Pub_Images/BtnEdit.gif" ToolTip="ویرایش" SkinId="Ibtn_Edit" />
+  <asp:LinkButton runat="server" AlternateText="ثبت" ImageUrl="../Public/Pub_Images/btn_Save.gif" ToolTip="ثبت" SkinId="Ilnkbtn_Save" />
+  <asp:LinkButton runat="server" AlternateText="ویرایش" ImageUrl="../Public/Pub_Images/BtnEdit.gif" ToolTip="ویرایش" SkinId="Ilnkbtn_Edit" />
+  <asp:LinkButton runat="server" AlternateText="حذف" ImageUrl="../Public/Pub_Images/BtnDel.gif" ToolTip="حذف" SkinId="Ilnkbtn_Del" />
+  <asp:LinkButton runat="server" AlternateText="انصراف" ImageUrl="../Public/Pub_Images/btn_Cancel.gif" ToolTip="انصراف" SkinId="Ilnkbtn_Cancel" />
+  
+  <asp:ListBox runat="server" SkinId="Lst" Rows="10" Font-Names="Tahoma" Width="160px" Font-Size="9pt" />--%>
+
+  <asp:TextBox runat="server"   ImageUrl="~/App_Themes/Public/Pub_Images/btn_Cancel.gif" ToolTip="انصراف" SkinId="Ibtn_Cancel" /> 
