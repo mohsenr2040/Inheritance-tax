@@ -6,8 +6,8 @@
 * [Launch](#Launch)
 
 ## General info
-The web Application is used in tax affairs organization.
-After registering All dead's Properties , calculate tax and issues tax certification.
+The web application that is used in tax affairs organization. 
+After registering all dead's Properties , calculates tax and issues tax certification.
 	
 ## Technologies
 Project is created with:
