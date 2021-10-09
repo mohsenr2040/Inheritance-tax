@@ -6,7 +6,7 @@
 * [Launch](#Launch)
 
 ## General info
-This application was developed in 2015
+This application was developed in 2015.
 The web application that is used in tax affairs organization. 
 After registering all dead's Properties , calculates tax and issues tax certification.
 	
